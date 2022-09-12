@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Sport2";
+    src: url(../assets/fonts/Sport2/sportsjersey.ttf);
+}
+
+#Grilla {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(34, 53, 109, 1) 0%, rgba(173, 216, 230, 1) 8%, rgba(173, 216, 230, 1) 92%, rgba(34, 53, 109, 1) 100%);
+}
+
+header {
+    width: 100vw;
+    height: 27vh;
+    background-color: white;
+    grid-area: header;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background: linear-gradient(90deg, rgba(245, 252, 255, 1) 30%, rgba(173, 216, 230, 1) 40%, rgba(173, 216, 230, 1) 60%, rgba(245, 252, 255, 1) 70%);
+}
+
+.Encabezado {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Titulo {
+    grid-area: Titulo;
+    width: 50%;
+    font-family: Sport2;
+    font-size: 55px;
+}
+
+header nav {
+    width: 100%;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .5fr;
+    grid-template-areas: ". Barra Barra .";
+    background-color: lightblue;
+    background-image: linear-gradient(90deg, rgba(34, 53, 109, 1) 0%, rgba(173, 216, 230, 1) 8%, rgba(173, 216, 230, 1) 92%, rgba(34, 53, 109, 1) 100%);
+
+}
+
+.BarraNav {
+    width: 100%;
+    grid-area: Barra;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-size: larger;
+    font-family: Sport2;
+    align-items: center;
+    padding: 1px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    border: solid 2px white;
+    padding: 16px;
+    margin: 7px;
+}
+
+#VideoA {
+    border: none;
+}
+
+.MainInicio {
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". titulo titulo titulo ."
+                         ". sec1 sec1 sec1 ."
+                         ". sec1 sec1 sec1 ."
+                         ". sec2 sec2 sec2 ."
+                         ". sec2 sec2 sec2 .";
+}
+
+.Sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr ;
+    grid-template-rows: 1fr;
+    grid-area: sec1;
+    grid-template-areas: "not1 not2";
+}
+
+.Titulosec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    grid-area: titulo;
+}
+
+.Span1 {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+
+.Span2 {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+
+.NoticiasUno {
+    flex-direction: column;
+    text-align: center;
+    grid-area: not1;
+    margin-left: 19%;
+}
+
+.NoticiasUno img {
+    width: 440px;
+    height: 250px;
+}
+
+.ParrafoUno {
+    font-size: xx-large;
+}
+
+.NoticiasDos {
+    text-align: center;
+    font-size: x-large;
+    transition: transform 0.5s ease;
+    grid-area: not2;
+    margin-right: 9%;
+}
+
+.NoticiasDos:hover {
+    transform: scale(1.05);
+}
+
+.NoticiasDos iframe {
+    width: 680px;
+    height: 390px;
+}
+
+.Sec2 {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-area: sec2;
+        grid-template-areas: "not3 not4";
+        margin-top: 1%;
+}
+
+.NoticiasTres {
+    text-align: center;
+    font-size: x-large;
+    transition: transform 0.5s ease;
+    grid-area: not3;
+    margin-left: 10%;
+}
+
+.NoticiasTres:hover {
+    transform: scale(1.05);
+}
+
+.NoticiasTres iframe {
+    width: 680px;
+    height: 390px;
+}
+
+.NoticiasCuatro {
+    flex-direction: column;
+    text-align: center;
+    grid-area: not4;
+    margin-right: 25%;
+}
+
+.NoticiasCuatro img {
+    width: 440px;
+    height: 250px;
+}
+
+.ParrafoDos {
+    font-size: xx-large;
+}
+
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: lightblue;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(34, 53, 109, 1) 0%, rgba(173, 216, 230, 1) 8%, rgba(173, 216, 230, 1) 92%, rgba(34, 53, 109, 1) 100%);
+}
+
+/* TORNEOS */
+
+.MainTorneos {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr .5fr;
+    grid-template-areas: "Titulo Titulo"
+        "Jugador1 Jugadora1"
+        "Jugador2 Jugadora2"
+        "Jugador3 Jugadora3"
+        "Jugador4 Jugadora4";
+}
+
+.TituloTorneo {
+    width: 100%;
+    grid-area: Titulo;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Sport2;
+    font-size: 40px;
+}
+
+.Jugador1 {
+    grid-area: Jugador1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugador2 {
+    grid-area: Jugador2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugador3 {
+    grid-area: Jugador3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugador4 {
+    grid-area: Jugador4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugadora1 {
+    grid-area: Jugadora1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugadora2 {
+    grid-area: Jugadora2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugadora3 {
+    grid-area: Jugadora3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jugadora4 {
+    grid-area: Jugadora4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* VIDEO */
+
+.GrillaVideo {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header"
+        "mainv mainv mainv mainv"
+        "mainv mainv mainv mainv"
+        "footer footer footer footer";
+}
+
+.MainVideos {
+    width: 100%;
+    height: 100vh;
+    grid-area: mainv;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
+    grid-template-areas: "H2 H2"
+        "video1 video2"
+        "video3 .";
+}
+
+.H2Videos {
+    text-align: center;
+    grid-area: H2;
+    justify-items: center;
+    margin-top: 2%;
+}
+
+.Video1 {
+    grid-area: video1;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.Video2 {
+    grid-area: video2;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.Video3 {
+    grid-area: video3;
+    width: 70%;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+/* CONTACTOS */
+
+.GrillaContacto {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header"
+        "mainc"
+        "footer";
+}
+
+.MainContacto {
+    width: 100%;
+    height: 60vh;
+    grid-area: mainc;
+}
+
+.Formulario1 {
+    width: 100%;
+    height: 400px;
+    grid-area: form1;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.Button {
+    background-color: lightblue;
+    border: 0;
+}
+
+.Button:hover {
+    background-color: rgb(137, 204, 226);
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.InfoContacto {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+.FooterContacto {
+    height: 20vh;
+}
+
+/* REGISTRO */
+
+.GrillaRegistro {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header"
+        "mainr"
+        "footer";
+}
+
+.MainRegistro {
+    width: 100%;
+    height: 80vh;
+    grid-area: mainr;
+}
+
+.FormularioRegistro {
+    background-color: blue;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.GeneroMargin {
+    margin-top: 20px;
+}
+
+.Formulario1Genero {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+label {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    font-family: Sport2;
+}
+
+.InputRegistro {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .MainVideo {
+        width: 100%;
+        height: 300vh;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    /* INICIO */
+
+    #Grilla {
+        width: 145vw;
+        height: 170vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr 1fr;
+        grid-template-areas: "header"
+            "main"
+            "main"
+            "footer";
+    }
+
+    header {
+        width: 100%;
+        height: 32vh;
+    }
+
+    header nav {
+        width: 100%;
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr;
+        grid-template-areas: "Barra";
+        background-color: lightblue;
+    }
+
+    .BarraNav {
+        justify-content: center;
+        font-size: x-large;
+        padding: 20px;
+    }
+
+    .MainInicio {
+        height: 130vh;
+        grid-area: main;
+        justify-content: center;
+    }
+
+    .NoticiasUno {
+        width: 100%;
+        font-size: xx-large;
+        padding-top: 40px;
+    }
+
+    .NoticiasDos {
+        padding-bottom: 50px;
+        font-size: xx-large;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 17vh;
+        font-size: x-large;
+    }
+
+    /* TORNEOS */
+
+    #GrillaTorneo {
+        width: 145vw;
+        height: 180vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .5fr .5fr 1fr;
+        grid-template-areas: "header header"
+            "main main"
+            "main main"
+            "footer footer";
+    }
+
+    .MainTorneos {
+        width: 100%;
+        height: 130vh;
+        align-items: center;
+    }
+
+    .TituloTorneo {
+        margin-top: 1px;
+    }
+
+    .H3Torneo {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: x-large;
+    }
+
+    /* VIDEOS */
+
+    .GrillaVideo {
+        height: 170vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header"
+            "mainv"
+            "mainv"
+            "footer";
+    }
+
+    .H2Videos {
+        margin-top: 10%;
+        font-size: xx-large;
+    }
+
+    .MainVideos {
+        height: 170vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr;
+        grid-template-areas: "H2"
+            "video1"
+            "video2"
+            "video3";
+    }
+
+    .Video1 {
+        grid-area: video1;
+        width: 80%;
+    }
+
+    .Video2 {
+        grid-area: video2;
+        width: 80%;
+    }
+
+    .Video3 {
+        grid-area: video3;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+
+    /* CONTACTOS */
+
+    .GrillaContacto {
+        width: 145vw;
+        height: 170vh;
+    }
+
+    .MainContacto {
+        height: 100vh;
+    }
+
+    .Formulario1 {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 90%;
+        height: 60px;
+    }
+
+    .InfoContacto {
+        width: 145vw;
+        height: 50vh;
+    }
+
+    /* REGISTRO */
+
+    .GrillaRegistro {
+        width: 145vw;
+        height: 170vh;
+    }
+
+    .MainRegistro {
+        width: 100%;
+        height: 100vh;
+        grid-area: mainr;
+    }
+
+    .Formulario1 {
+        margin-top: 20%;
+    }
+
+}
