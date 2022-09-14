@@ -32,9 +32,10 @@ header {
     align-items: center;
 }
 
-#Titulo {
+.animate__animated {
     grid-area: Titulo;
-    width: 50%;
+    width: 14%;
+    margin-right: 35%;
     font-family: Sport2;
     font-size: 55px;
 }
@@ -83,15 +84,15 @@ a {
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
     grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
     grid-template-areas: ". titulo titulo titulo ."
-                         ". sec1 sec1 sec1 ."
-                         ". sec1 sec1 sec1 ."
-                         ". sec2 sec2 sec2 ."
-                         ". sec2 sec2 sec2 .";
+        ". sec1 sec1 sec1 ."
+        ". sec1 sec1 sec1 ."
+        ". sec2 sec2 sec2 ."
+        ". sec2 sec2 sec2 .";
 }
 
 .Sec1 {
     display: grid;
-    grid-template-columns: 1fr 1.5fr ;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
     grid-area: sec1;
     grid-template-areas: "not1 not2";
@@ -151,12 +152,12 @@ a {
 }
 
 .Sec2 {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: 1fr;
-        grid-area: sec2;
-        grid-template-areas: "not3 not4";
-        margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: sec2;
+    grid-template-areas: "not3 not4";
+    margin-top: 1%;
 }
 
 .NoticiasTres {
@@ -191,7 +192,6 @@ a {
 .ParrafoDos {
     font-size: xx-large;
 }
-
 
 footer {
     width: 100%;
