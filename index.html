@@ -7,88 +7,119 @@
     <meta name="viewport" content="width=devide-width
     , initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>PadelZone</title>
 </head>
 
-<body id="Grilla">
+<body>
 
-    <header>
-
-        <div class="Encabezado">
-            <img src="./assets/galeria/PadelOriginal.png" id="Imagen" alt="Logo">
-            <h1 class="animate__animated animate__flash">Padel Zone</h1>
-        </div>
-        <nav>
-            <div class="BarraNav">
-                <a href="index.html">Inicio</a>
-                <a href="./pages/Torneos.html">Torneos</a>
-                <a href="./pages/Videos.html">Videos</a>
-                <a href="./pages/contacto.html">Contacto</a>
-                <a href="./pages/registro.html">Registro</a>
+    <header class="container-fluid">
+        <div class="row m-0">
+            <div class="col-4 d-flex align-self-end">
+                <div class="container">
+                    <div class="row d-flex align-self-end justify-content-center">
+                        <a class="col-1" href="#"><img src="./assets/galeria/twitch.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="./assets/galeria/facebook.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="./assets/galeria/twitter.svg" alt=""></a>
+                    </div>
+                    <div class="row d-flex align-self-end justify-content-center">
+                        <a class="col-1" href="#"><img src="./assets/galeria/instagram.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="./assets/galeria/telegram.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="./assets/galeria/youtube.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
-        </nav>
+            <div class="col-4 d-flex justify-content-center mt-2">
+                <img src="./assets/galeria/logone.png" class="rounded-circle" id="Imagen" alt="Logo">
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-end align-items-center">
+                <a href="#" class="col-4 btn btn-outline-light">Entradas</a>
+                <a href="#" class="col-4 btn btn-outline-light">Tienda</a>
+            </div>
+            <div class="row gx-0 mb-5 mt-4">
+                <nav class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./pages/Torneos.html">Torneos</a>
+                    <a href="./pages/Videos.html">Videos</a>
+                    <a href="./pages/contacto.html">Contacto</a>
+                    <a href="./pages/registro.html">Registro</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><img src="./assets/galeria/search.svg"
+                                alt=""></button>
+                    </form>
+                </nav>
+            </div>
 
+        </div>
     </header>
 
-    <main class="MainInicio">
-        <div class="Titulosec1">
-            <h2>Semifinales Australia Open</h2>
+    <main class="container-fluid">
+
+        <div class="row">
+            <span class="col-3 d-flex justify-content-end">____________________________________________________</span>
+            <h2 class="col-6 text-center">Semifinales Australia Open</h2>
+            <span class="col-3">____________________________________________________</span>
         </div>
-        <div class="Span1">
-            <span>________________________</span>
-        </div>
-        <div class="Span2">
-            <span>________________________</span>
-        </div>
-        <div class="Sec1">
-            <div class="NoticiasUno">
-                <img src="./assets/galeria/Lebron.jpg">
-                <div class="ParrafoUno">
-                    <p>Lebron y Galan siguen IMPARABLES: Quinto titulo consecutivo de la pareja numero 1 del
-                        circuito
-                    </p>
+
+        <section class="container">
+            <div class="row mt-4">
+                <div class="card col-5" id="section_car1">
+                    <img src="./assets/galeria/Lebron.jpg" class="card-img-top" alt="LebronGalan">
+                    <div class="card-body">
+                        <h5 class="card-title">Australia Open</h5>
+                        <p class="card-text">Lebron y Galan siguen IMPARABLES: Quinto titulo consecutivo de la
+                            pareja
+                            numero 1 del
+                            circuito.</p>
+                    </div>
+                </div>
+                <div class="col-7 d-flex">
+                    <iframe class="videos" width="100%" height="100%" src="https://www.youtube.com/embed/VfnWW7X2P8k"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="NoticiasDos">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VfnWW7X2P8k"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div>
-                    <a id="VideoA" href="https://www.youtube.com/watch?v=VfnWW7X2P8k" target="_blank">#TOP10 Mejores
-                        Golpes
-                        de la
-                        primera
-                        mitad de temporada 2022</a>
+
+            <div class="row mt-4">
+                <div class="col-7 d-flex" id="video_sec2">
+                    <iframe class="videos" width="100%" height="100%" src="https://www.youtube.com/embed/47UKtj_C3sQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-5" id="section_car2">
+                    <img src="./assets/galeria/ArturoCoello.jpg" class="card-img-top" alt="ArturoC">
+                    <div class="card-body">
+                        <h5 class="card-title">Australia Open</h5>
+                        <p class="card-text">Bela y Coello dejaron sin argumentos a Paquito y Di Nenno, y se
+                            posicionan rapidamente en las
+                            finales.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="Sec2">
-            <div class="NoticiasTres">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/47UKtj_C3sQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p>#Los Numeros uno siguen firmes no se pierden las semifinales</p>
-            </div>
-            <div class="NoticiasCuatro">
-                <img src="./assets/galeria/ArturoCoello.jpg" alt="ArturoC">
-                <div class="ParrafoDos">
-                    <p>Bela y Coello dejaron sin argumentos a Paquito y Di Nenno, y se posicionan rapidamente en las
-                        finales</p>
-                </div>
-            </div>
-        </div>
+        </section>
+
     </main>
 
-    <footer>
-
-        <p>Contacto: Gomezjuancruz9@gmail.com</p>
-        <p>Oficina: 357131772</p>
+    <footer class="container-fluid">
+        <div class="row text-center border-top">
+            <p>Contacto: Gomezjuancruz9@gmail.com</p>
+            <p>Oficina: 357131772</p>
+        </div>
 
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 </body>
 
 
