@@ -36,7 +36,6 @@ main {
 span {
     color: white
 }
-
 h2 {
     color: white;
 }
@@ -93,4 +92,8 @@ h5 {
 footer {
     background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%) !important;
     color: white;
+}
+
+label {
+    color:white
 }

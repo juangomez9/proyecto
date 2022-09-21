@@ -5,85 +5,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=devide-width
-    , initial-scale=1.0">
+        , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>PadelZone</title>
 </head>
 
-<body id="GrillaTorneo">
+<body>
 
-    <header>
-
-        <div class="Encabezado">
-            <img src="../assets/galeria/PadelOriginal.png" id="Imagen" alt="Logo">
-            <h1 id="Titulo">Padel Zone</h1>
-        </div>
-        <nav>
-            <div class="BarraNav">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/Torneos.html">Torneos</a>
-                <a href="../pages/Videos.html">Videos</a>
-                <a href="../pages/contacto.html">Contacto</a>
-                <a href="../pages/registro.html">Registro</a>
+    <header class="container-fluid">
+        <div class="row m-0">
+            <div class="col-4 d-flex align-self-end">
+                <div class="container">
+                    <div class="row d-flex align-self-end justify-content-center">
+                        <a class="col-1" href="#"><img src="../assets/galeria/twitch.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/facebook.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/twitter.svg" alt=""></a>
+                    </div>
+                    <div class="row d-flex align-self-end justify-content-center">
+                        <a class="col-1" href="#"><img src="../assets/galeria/instagram.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/telegram.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/youtube.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
-        </nav>
-
+            <div class="col-4 d-flex justify-content-center mt-2">
+                <img src="../assets/galeria/logone.png" class="rounded-circle" id="Imagen" alt="Logo">
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-end align-items-center">
+                <a href="#" class="col-4 btn btn-outline-light">Entradas</a>
+                <a href="#" class="col-4 btn btn-outline-light">Tienda</a>
+            </div>
+            <div class="row gx-0 mb-5 mt-4">
+                <nav class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="../index.html">Inicio</a>
+                    <a href="Torneos.html">Torneos</a>
+                    <a href="Videos.html">Videos</a>
+                    <a href="Videos.html">Contacto</a>
+                    <a href="registro.html">Registro</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><img src="../assets/galeria/search.svg"
+                                alt=""></button>
+                    </form>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <main class="MainTorneos">
+    <main>
 
-        <h2 class="TituloTorneo">Ranking Padel Zone</h2>
-
-
-            <!-- <h3 class="H3Torneo">Masculino</h3> -->
-            <div class="Jugador1">
-                <h3 class="H3Ranking">Juan Lebron</h3>
-                <img src="../assets/galeria/JuanLebron.jfif" alt="ImagenJuanLebron">
-            </div>
-            <div class="Jugador2">
-                <h3 class="H3Ranking">Ale Galan</h3>
-                <img src="../assets/galeria/AleGalan.jfif" alt="ImagenAleGalan">
-            </div>
-            <div class="Jugador3">
-                <h3 class="H3Ranking">Paco Navarro</h3>
-                <img src="../assets/galeria/PacoNavarro.jfif" alt="ImagenPacoNavarro">
-            </div>
-            <div class="Jugador4">
-                <h3 class="H3Ranking">Martin Dinneno</h3>
-                <img src="../assets/galeria/MartinDinneno.jfif" alt="ImagenMartinDinneno">
-            </div>
-
-
-           
-                <!-- <h3 class="H3Torneo">Femenino</h3> -->
-                <div class="Jugadora1">
-                    <h3 class="H3Ranking">Alejandra Zalazar</h3>
-                    <img src="../assets/galeria/AleZalazar.jfif" alt="ImagenAlejandraZalazar">
+        <div class="row text-center">
+            <h2>Ranking Padel Zone</h2>
+        </div>
+        <!-- Section Ranking PZ -->
+        <section class="container-fluid mt-5">
+            <div class="col-12 d-flex flex-column justify-content-center">
+                <div class="row d-flex justify-content-around">
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/JuanLebron.jfif"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">1</h2>
+                                    <p class="card-text">JUAN LEBRON CHINNCOA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/AleGalan.jfif"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">1</h2>
+                                    <p class="card-text">ALEJANDRO GALAN ROMO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/AleZalazar.jfif"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">1</h2>
+                                    <p class="card-text">ALEJANDRA ZALAZAR BENGOECHEA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/Gemma.jfif"
+                                    class="rank img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">1</h2>
+                                    <p class="card-text">GEMMA TRIAY BEATRIZ PONS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="Jugadora2">
-                    <h3 class="H3Ranking">Gemma Triay</h3>
-                    <img src="../assets/galeria/Gemma.jfif" alt="ImagenGemmaTriay">
+                <div class="row d-flex justify-content-around">
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/PacoNavarro.jfif"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">2</h2>
+                                    <p class="card-text">FRANCISCO NAVARRO COMPAN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0 p-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/MartinDinenno.png"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">2</h2>
+                                    <p class="card-text">MARTIN ALEJANDRO DI NENNO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/ariana.jfif"
+                                    class="rank img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">2</h2>
+                                    <p class="card-text">ARIANA SANCHEZ FALLADA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/paula.jfif"
+                                    class="rank img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">2</h2>
+                                    <p class="card-text">PAULA JOSEMARIA MARTIN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="Jugadora3">
-                    <h3 class="H3Ranking">Ariana Sanchez</h3>
-                    <img src="../assets/galeria/ariana.jfif" alt="ImagenArianaSanchez">
-                </div>
-                <div class="Jugadora4">
-                    <h3 class="H3Ranking">Paula JoseMaria</h3>
-                    <img src="../assets/galeria/paula.jfif" alt="ImagenPaulaJoseMaria">
+                <div class="row d-flex justify-content-around mb-5">
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/Stupa.png"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">3</h2>
+                                    <p class="card-text">FRANCO ANDRES STUPACZUK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0 p-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/AlexR.png"
+                                    class="img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">3</h2>
+                                    <p class="card-text">ALEJANDRO RUIZ GRANADOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/ariana.jfif"
+                                    class="rank img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">3</h2>
+                                    <p class="card-text">ARIANA SANCHEZ FALLADA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 340px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../assets/galeria/paula.jfif"
+                                    class="rank img-fluid rounded-circle border border-3 border-dark" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-center xx-large">
+                                    <h2 class="card-title">3</h2>
+                                    <p class="card-text">PAULA JOSEMARIA MARTIN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
+        </section>
+
 
     </main>
 
-    <footer>
-
-        <p>Contacto: Gomezjuancruz9@gmail.com</p>
-        <p>Oficina: 357131772</p>
-
+    <footer class="container-fluid">
+        <div class="row text-center border-top">
+            <p>Contacto: Gomezjuancruz9@gmail.com</p>
+            <p>Oficina: 357131772</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 </body>
 
 

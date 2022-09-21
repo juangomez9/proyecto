@@ -4,75 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=devide-width
+        , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>PadelZone</title>
 </head>
 
-<body class="GrillaRegistro">
+<body>
 
-    <header>
-
-        <div class="Encabezado">
-            <img src="../assets/galeria/PadelOriginal.png" id="Imagen" alt="Logo">
-            <h1 id="Titulo">Padel Zone</h1>
-        </div>
-        <nav>
-            <div class="BarraNav">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/Torneos.html">Torneos</a>
-                <a href="../pages/Videos.html">Videos</a>
-                <a href="../pages/contacto.html">Contacto</a>
-                <a href="../pages/registro.html">Registro</a>
+    <header class="container-fluid">
+        <div class="row m-0">
+            <div class="col-4 d-flex align-self-end">
+                <div class="container">
+                    <div class="row d-flex align-self-end justify-content-center">
+                        <a class="col-1" href="#"><img src="../assets/galeria/twitch.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/facebook.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/twitter.svg" alt=""></a>
+                    </div>
+                    <div class="row d-flex align-self-end justify-content-center">
+                        <a class="col-1" href="#"><img src="../assets/galeria/instagram.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/telegram.svg" alt=""></a>
+                        <a class="col-1" href="#"><img src="../assets/galeria/youtube.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
-        </nav>
-
+            <div class="col-4 d-flex justify-content-center mt-2">
+                <img src="../assets/galeria/logone.png" class="rounded-circle" id="Imagen" alt="Logo">
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-end align-items-center">
+                <a href="#" class="col-4 btn btn-outline-light">Entradas</a>
+                <a href="#" class="col-4 btn btn-outline-light">Tienda</a>
+            </div>
+            <div class="row gx-0 mb-5 mt-4">
+                <nav class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="../index.html">Inicio</a>
+                    <a href="Torneos.html">Torneos</a>
+                    <a href="Videos.html">Videos</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="registro.html">Registro</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><img src="../assets/galeria/search.svg"
+                                alt=""></button>
+                    </form>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <main class="MainRegistro">
+    <main>
+
         <!-- Formulario de Registro -->
-        <div class="Formulario1">
-            <form action="../index.html">
-                <br />
-                <input type="text" name="NombreyApellido" placeholder="Nombre y Apellido *">
-                <br />
-                <input type="text" name="NumeroDeTelefono" placeholder="NumeroDeTelefono *">
-                <br />
-                <input type="text" name="Email" placeholder="Email *">
-                <br />
-                <input type="password" name="Contraseña" placeholder="Contraseña *">
-                <br />
-                <input type="password" name="ConfirmarContraseña" placeholder="ConfirmarContraseña *">
-                <div class="GeneroMargin">
-                    <label>Genero: </label>
-                    <div class="Formulario1Genero">
-                        <div>
-                            <label>Masculino</label>
-                            <br>
-                            <input class="InputRegistro" type="radio" name="genero" value="masculino">
-                        </div>
-                        <div>
-                            <label>Femenino</label>
-                            <br>
-                            <input class="InputRegistro" type="radio" name="genero" value="femenino">
-                        </div>
+        <div class="container">
+            <div class="text-center">
+                <h2>Registrarse</h2>
+            </div>
+            <form class="row g-3 mt-5">
+                <div class="col-6">
+                    <label for="inputEmail4" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputEmail4" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                  </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" placeholder="Direccion">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Pais</label>
+                    <input type="text" class="form-control" placeholder="Paises">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Genero</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
                     </div>
-                    <input class="Button" type="submit" />
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-5">
+                    <button type="submit" class="btn btn-light">Registrarse</button>
                 </div>
             </form>
-
         </div>
 
     </main>
 
-    <footer>
-
-        <p>Contacto: Gomezjuancruz9@gmail.com</p>
-        <p>Oficina: 357131772</p>
-
+    <footer class="container-fluid">
+        <div class="row text-center border-top">
+            <p>Contacto: Gomezjuancruz9@gmail.com</p>
+            <p>Oficina: 357131772</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 </body>
 
 
