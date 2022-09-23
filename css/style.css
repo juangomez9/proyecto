@@ -9,6 +9,11 @@
     src: url(../assets/fonts/Sport2/sportsjersey.ttf);
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 header {
     background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%) !important;
 }
@@ -36,6 +41,7 @@ main {
 span {
     color: white
 }
+
 h2 {
     color: white;
 }
@@ -47,16 +53,14 @@ a img {
 /* Section numero uno  */
 
 #section_car1 {
-    width: 30%;
     padding: 0 !important;
-    margin-left: 10% !important;
+    margin-left: 5% !important;
     text-align: center;
     font-size: x-large;
     color: white;
 }
 
 #section_car2 {
-    width: 30%;
     padding: 0 !important;
     text-align: center;
     font-size: x-large;
@@ -72,20 +76,19 @@ h5 {
 }
 
 #video_sec2 {
-    margin-left: 9% !important;
+    margin-left: 4% !important;
 }
 
 #Imagen {
-    width: 25%;
+    width: 130px;
 }
 
-.videos {
-    width: 750px;
-    height: 490px;
+video {
+    width: 100%;
     transition: transform 0.5s ease;
 }
 
-.videos:hover {
+video:hover {
     transform: scale(1.05);
 }
 
@@ -95,5 +98,49 @@ footer {
 }
 
 label {
-    color:white
+    color: white
+}
+
+@media (max-width: 768px) {
+    #section_car1 {
+        padding: 0 !important;
+        margin-left: 0% !important;
+        text-align: center;
+        font-size: x-large;
+        color: white;
+    }
+    
+    #section_car2 {
+        padding: 0 !important;
+        text-align: center;
+        font-size: x-large;
+        color: white;
+    }
+
+    #video_sec2 {
+        margin-left: 0% !important;
+    }
+    
+}
+
+@media (max-width: 990px) {
+    #section_car1 {
+        padding: 0 !important;
+        margin-left: 0% !important;
+        text-align: center;
+        font-size: x-large;
+        color: white;
+    }
+    
+    #section_car2 {
+        padding: 0 !important;
+        text-align: center;
+        font-size: x-large;
+        color: white;
+    }
+
+    #video_sec2 {
+        margin-left: 0% !important;
+    }
+    
 }

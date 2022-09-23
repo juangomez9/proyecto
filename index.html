@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=devide-width
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0" shrink-to-fit="no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" media="(max-width: 320px)" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
     <title>PadelZone</title>
 </head>
@@ -55,17 +56,21 @@
         </div>
     </header>
 
-    <main>
+    <main class="container-fluid">
 
-        <div class="row col-12">
+        <!-- <div class="row col-12">
             <span class="col-3 d-flex justify-content-end">____________________________________________________</span>
-            <h2 class="col-6 text-center">Semifinales Australia Open</h2>
-            <span class="col-3">____________________________________________________</span>
+            <h2 class="col-6 text-center">Semifinales Australia Open</h2> -->
+            <!-- <span class="col-3">____________________________________________________</span>
+        </div> --> -->
+
+        <div class="row">
+            <h2 class="col-12 text-center">Semifinales Australia Open</h2> -->
         </div>
 
         <section class="container">
             <div class="row mt-4">
-                <div class="card col-5" id="section_car1">
+                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-3" id="section_car1">
                     <img src="./assets/galeria/Lebron.jpg" class="card-img-top" alt="LebronGalan">
                     <div class="card-body">
                         <h5 class="card-title">Australia Open</h5>
@@ -75,22 +80,21 @@
                             circuito.</p>
                     </div>
                 </div>
-                <div class="col-7 d-flex">
-                    <iframe class="videos" width="100%" height="100%" src="https://www.youtube.com/embed/VfnWW7X2P8k"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                    <video width="100%" poster="./assets/galeria/lebrongalanmaster.png" controls>
+                        <source
+                            src="./assets/galeria/Men's Final Highlights Galán_Lebrón Vs Navarro_Di Nenno Swedish Padel Open 2022.mp4">
+                    </video>
                 </div>
             </div>
 
             <div class="row mt-4">
-                <div class="col-7 d-flex" id="video_sec2">
-                    <iframe class="videos" width="100%" height="100%" src="https://www.youtube.com/embed/47UKtj_C3sQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 mb-3" id="video_sec2">
+                    <video width="100%" poster="./assets/galeria/belacoello.jpg" controls>
+                        <source src="./assets/galeria/belacoellohigh.mp4">
+                    </video>
                 </div>
-                <div class="card col-5" id="section_car2">
+                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-3" id="section_car2">
                     <img src="./assets/galeria/ArturoCoello.jpg" class="card-img-top" alt="ArturoC">
                     <div class="card-body">
                         <h5 class="card-title">Australia Open</h5>
@@ -112,6 +116,10 @@
     </footer>
 
 
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
