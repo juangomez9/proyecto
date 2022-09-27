@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" media="(max-width: 320px)" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
     <title>PadelZone</title>
 </head>
@@ -18,7 +17,7 @@
 
     <header class="container-fluid">
         <div class="row m-0">
-            <div class="col-4 d-flex align-self-end">
+            <div class="redes col-xs-12 col-sm-4 col-md-4 col-lg-4 d-flex align-self-end">
                 <div class="container">
                     <div class="row d-flex align-self-end justify-content-center">
                         <a class="col-1" href="#"><img src="./assets/galeria/twitch.svg" alt=""></a>
@@ -32,75 +31,124 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 d-flex justify-content-center mt-2">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center mt-2">
                 <img src="./assets/galeria/logone.png" class="rounded-circle" id="Imagen" alt="Logo">
             </div>
-            <div class="col-4 d-flex flex-column justify-content-end align-items-center">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 d-flex flex-column justify-content-end align-items-center">
                 <a href="#" class="col-4 btn btn-outline-light">Entradas</a>
                 <a href="#" class="col-4 btn btn-outline-light">Tienda</a>
             </div>
-            <div class="row gx-0 mb-5 mt-4">
-                <nav class="col-12 d-flex justify-content-center align-items-center">
-                    <a href="./index.html">Inicio</a>
-                    <a href="./pages/Torneos.html">Torneos</a>
-                    <a href="./pages/Videos.html">Videos</a>
-                    <a href="./pages/contacto.html">Contacto</a>
-                    <a href="./pages/registro.html">Registro</a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit"><img src="./assets/galeria/search.svg"
-                                alt=""></button>
-                    </form>
-                </nav>
-            </div>
         </div>
+        <div class="row mt-5">
+            <nav class="navbar navbar-expand-lg bg-dark mb-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">PADEL ZONE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container-fluid collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="barranav col-xs-12 col-sm-12 col-md-10 col-lg-10 d-flex justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Torneos.html">Jugadores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/registro.html">Registro</a>
+                            </li>
+                        </ul>
+                        <form class="col-xs-12 col-sm-12 col-md-12 col-lg-2 d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit"><img src="./assets/galeria/search.svg"
+                                    alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
     <main class="container-fluid">
 
-        <!-- <div class="row col-12">
-            <span class="col-3 d-flex justify-content-end">____________________________________________________</span>
-            <h2 class="col-6 text-center">Semifinales Australia Open</h2> -->
-            <!-- <span class="col-3">____________________________________________________</span>
-        </div> --> -->
-
-        <div class="row">
-            <h2 class="col-12 text-center">Semifinales Australia Open</h2> -->
+        <div class="row d-flex align-items-center">
+            <img class="imgsep col-3" src="./assets/galeria/separador.png" alt="">
+            <h2 class="col-6 text-center">Swedish Padel Open 2022</h2>
+            <img class="imgsep col-3" src="./assets/galeria/separador.png" alt="">
         </div>
 
         <section class="container">
-            <div class="row mt-4">
-                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-3" id="section_car1">
-                    <img src="./assets/galeria/Lebron.jpg" class="card-img-top" alt="LebronGalan">
+            <div class="row fila_uno mt-4 mb-3">
+                <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" id="section_car1">
+                    <a href="" class="card-link"><img src="./assets/galeria/Lebron.jpg" class="card-img-top"
+                            alt="LebronGalan">
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title">Australia Open</h5>
+                        <h5 class="card-title">Swedish Padel Open</h5>
                         <p class="card-text">Lebron y Galan siguen IMPARABLES: Quinto titulo consecutivo de la
-                            pareja
-                            numero 1 del
-                            circuito.</p>
+                            pareja numero uno del circuito.</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-                    <video width="100%" poster="./assets/galeria/lebrongalanmaster.png" controls>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7" id="video_sec1">
+                    <video poster="./assets/galeria/lebrongalanmaster.jpg" controls>
                         <source
                             src="./assets/galeria/Men's Final Highlights Galán_Lebrón Vs Navarro_Di Nenno Swedish Padel Open 2022.mp4">
                     </video>
                 </div>
             </div>
 
-            <div class="row mt-4">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 mb-3" id="video_sec2">
-                    <video width="100%" poster="./assets/galeria/belacoello.jpg" controls>
+            <div class="row fila_dos mb-3">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7" id="video_sec2">
+                    <video poster="./assets/galeria/belacoello.jpg" controls>
                         <source src="./assets/galeria/belacoellohigh.mp4">
                     </video>
                 </div>
-                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-3" id="section_car2">
-                    <img src="./assets/galeria/ArturoCoello.jpg" class="card-img-top" alt="ArturoC">
+                <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" id="section_car2">
+                    <a href="" class="card-link"><img src="./assets/galeria/ArturoCoello.jpg" class="card-img-top"
+                            alt="ArturoCoello">
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title">Australia Open</h5>
+                        <h5 class="card-title">Swedish Padel Open</h5>
                         <p class="card-text">Bela y Coello dejaron sin argumentos a Paquito y Di Nenno, y se
-                            posicionan rapidamente en las
-                            finales.</p>
+                            posicionan rapidamente en las finales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-0 mb-3 d-flex">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="video_sec4">
+                    <video poster="./assets/galeria/finalfemenina.png" controls>
+                        <source
+                            src="./assets/galeria/Women's Final Highlights Josemaría_Sánchez Vs Salazar_Triay Swedish Padel Open 2022.mp4">
+                    </video>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="video_sec4_2"">
+                    <video poster=" ./assets/galeria/semisfemeninas.png" controls>
+                    <source
+                        src="./assets/galeria/Women's Semifinal Highlights Salazar_Triay Vs González_Ortega Swedish Padel Open 2022 (1).mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="row gx-0">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mb-2" id="video_sec3">
+                    <video poster="./assets/galeria/galanpuntos.jpg" controls>
+                        <source src="./assets/galeria/videoplayback.mp4">
+                    </video>
+                </div>
+                <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" id="card_sec3" style="width: 21.3rem;">
+                    <div class="card-body d-flex align-items-center">
+                        <h2 class="card-title text-center" id="h2puntos">Los Mejores Tres Puntos del Swedish Padel Open
+                            2022</h2>
                     </div>
                 </div>
             </div>
@@ -118,8 +166,10 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>

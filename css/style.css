@@ -9,17 +9,26 @@
     src: url(../assets/fonts/Sport2/sportsjersey.ttf);
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-}
+/* Header general */
 
 header {
     background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%) !important;
 }
 
-nav {
-    height: 8vh;
+#Imagen {
+    width: 130px;
+}
+
+a img {
+    width: 25px;
+}
+
+.nav-item {
+    margin: 2%;
+}
+
+.navbar-toggler {
+    border: 1px solid white !important;
 }
 
 a {
@@ -27,45 +36,29 @@ a {
     font-family: Sport2 !important;
     font-size: x-large;
     margin: 2%;
-    color: white;
+    color: white !important;
 }
 
 nav a:hover {
     color: black;
 }
 
+/* Main generales */
+
 main {
     background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%) !important;
 }
 
-span {
-    color: white
+.imgsep {
+    height: 4px;
 }
 
 h2 {
     color: white;
 }
 
-a img {
-    width: 25px;
-}
 
-/* Section numero uno  */
-
-#section_car1 {
-    padding: 0 !important;
-    margin-left: 5% !important;
-    text-align: center;
-    font-size: x-large;
-    color: white;
-}
-
-#section_car2 {
-    padding: 0 !important;
-    text-align: center;
-    font-size: x-large;
-    color: white;
-}
+/* Sections */
 
 .card-body {
     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
@@ -75,21 +68,87 @@ h5 {
     font-size: x-large;
 }
 
+video {
+    width: 100%;
+}
+
+/* Fila numero uno */
+
+#section_car1 {
+    padding: 0 !important;
+    margin-left: 5% !important;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    transition: transform 0.5s ease;
+    height: 417.5px;
+}
+
+#section_car1:hover {
+    transform: scale(1.03);
+}
+
+.card-link {
+    margin: 0 !important;
+}
+
+.card-body {
+    padding: 0;
+    padding-top: 4%;
+}
+
+#section_car2 {
+    padding: 0 !important;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    transition: transform 0.5s ease;
+    height: 421.28px;
+}
+
+#section_car2:hover {
+    transform: scale(1.03);
+}
+
+#video_sec1 {
+    margin-left: 0.3% !important;
+    width: 58.1%;
+}
+
 #video_sec2 {
+    margin-left: 4% !important;
+    width: 58.6%;
+}
+
+/* Fila numero dos */
+
+#video_sec3 {
     margin-left: 4% !important;
 }
 
-#Imagen {
-    width: 130px;
+#card_sec3 {
+    border: none;
+    height: 486px;
 }
 
-video {
-    width: 100%;
-    transition: transform 0.5s ease;
+#video_sec4 {
+    width: 45%;
+    margin-left: 4%;
 }
 
-video:hover {
-    transform: scale(1.05);
+#video_sec4_2 {
+    width: 45%;
+    margin-left: 3%;
+}
+
+#h2puntos {
+    font-size: 300%;
+}
+
+/* Pagina Ranking */
+
+.card_p {
+    font-size: 20px;
 }
 
 footer {
@@ -101,46 +160,164 @@ label {
     color: white
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+
     #section_car1 {
         padding: 0 !important;
-        margin-left: 0% !important;
         text-align: center;
-        font-size: x-large;
+        font-size: small;
         color: white;
+        height: 299.95px;
     }
-    
+
     #section_car2 {
         padding: 0 !important;
         text-align: center;
-        font-size: x-large;
+        font-size: small;
         color: white;
+        height: 302.7px;
+    }
+
+    #video_sec1 {
+        margin-left: 0.3%;
     }
 
     #video_sec2 {
-        margin-left: 0% !important;
+        margin-left: 4%;
     }
-    
+
+    #card_sec3 {
+        width: 15.4rem !important;
+        font-size: 60%;
+        height: 350.98px;
+    }
+
+    .card-body {
+        padding-top: 4%;
+    }
+
+    .card_p {
+        font-size: 20px;
+    }
+
 }
 
-@media (max-width: 990px) {
+@media (max-width: 768px) {
+
     #section_car1 {
         padding: 0 !important;
         margin-left: 0% !important;
         text-align: center;
-        font-size: x-large;
+        font-size: small;
         color: white;
+        height: 249px;
     }
-    
+
     #section_car2 {
         padding: 0 !important;
         text-align: center;
-        font-size: x-large;
+        font-size: small;
         color: white;
+        height: 249px;
+    }
+
+    #video_sec1 {
+        width: 65%;
     }
 
     #video_sec2 {
         margin-left: 0% !important;
+        width: 65%;
     }
-    
+
+    #video_sec4 {
+        width: 49%;
+        margin: 0%;
+    }
+
+    #video_sec4_2 {
+        width: 49%;
+        margin: 0%;
+        margin-left: 2%;
+    }
+
+    #video_sec3 {
+        margin: 0 !important;
+        width: 64.5%;
+    }
+
+    #card_sec3 {
+        height: 252px !important;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+
+    #Imagen {
+        width: 130px;
+        height: 150px;
+        margin-bottom: 3%;
+    }
+
+    .redes {
+        visibility: hidden;
+    }
+
+    #section_car1 {
+        padding: 0 !important;
+        margin-left: 8% !important;
+        text-align: center;
+        font-size: small;
+        color: white;
+        width: 249px;
+    }
+
+    #section_car2 {
+        padding: 0 !important;
+        text-align: center;
+        font-size: small;
+        color: white;
+        width: 249px;
+        margin-left: 8% !important;
+    }
+
+    #video_sec1 {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    #video_sec2 {
+        margin-left: 0% !important;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    #video_sec4 {
+        width: 100%;
+        margin: 0%;
+        margin-top: 3%;
+    }
+
+    #video_sec4_2 {
+        width: 100%;
+        margin: 0%;
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+
+    #video_sec3 {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    #card_sec3 {
+        height: 1px !important;
+        font-size: 1px;
+        margin-bottom: 1%;
+        visibility: hidden;
+        }
+
 }
