@@ -1,0 +1,56 @@
+header {
+
+    background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%);
+
+    .fila_header {
+        .redes {
+            .container {
+                .row {
+                    a {
+                        margin: 2%;
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #Imagen {
+            width: 130px;
+        }
+
+        div {
+            a {
+                margin: 1%;
+            }
+        }
+    }
+
+    .fila_nav {
+        nav {
+            .container-fluid {
+                a {
+                    text-decoration: none;
+                    font-family: Sport2 !important;
+                    font-size: x-large;
+                    margin: 2%;
+                    color: white !important;
+                }
+
+                .navbar-toggler {
+                    border: 1px solid white !important;
+                }
+
+                .container-fluid {
+                    .barranav {
+                        .nav-item {
+                            margin: 2%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

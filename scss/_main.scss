@@ -1,0 +1,132 @@
+main {
+
+    background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%);
+
+    .fila_separador {
+        .imgsep {
+            height: 4px;
+        }
+
+        h2 {
+            color: white;
+        }
+    }
+
+    .container {
+        .fila_uno {
+            #section_car1 {
+                padding: 0 !important;
+                margin-left: 5% !important;
+                text-align: center;
+                color: white;
+                transition: transform 0.5s ease;
+                height: 417.5px;
+
+                #section_car1:hover {
+                    transform: scale(1.03);
+                }
+
+                .card-link {
+                    margin: 0 !important;
+                }
+
+                .card-body {
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+
+                    h5 {
+                        font-size: x-large;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+            }
+
+            #video_sec1 {
+                margin-left: 0.3% !important;
+                width: 58.1%;
+            }
+        }
+
+        .fila_dos {
+            #video_sec2 {
+                margin-left: 4% !important;
+                width: 58.6%;
+            }
+
+            #section_car2 {
+                padding: 0 !important;
+                text-align: center;
+                font-size: x-large;
+                color: white;
+                transition: transform 0.5s ease;
+                height: 421.28px;
+
+                #section_car2:hover {
+                    transform: scale(1.03);
+                }
+
+                .card-link {
+                    margin: 0 !important;
+                }
+            }
+
+            .card-body {
+                background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+
+                h5 {
+                    font-size: x-large;
+                    text-align: center;
+                    color: white;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+
+        .fila_tres {
+            #video_sec3 {
+                width: 45%;
+                margin-left: 4%;
+
+                video {
+                    width: 100%;
+                }
+            }
+
+            #video_sec3_2 {
+                width: 45%;
+                margin-left: 3%;
+
+                video {
+                    width: 100%;
+                }
+            }
+        }
+
+        .fila_cuatro {
+            #video_sec4 {
+                margin-left: 4% !important;
+            }
+
+            #card_sec4 {
+                border: none;
+                height: 486px;
+
+                .card-body {
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
