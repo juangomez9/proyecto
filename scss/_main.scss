@@ -1,3 +1,21 @@
+@mixin mb( $medida: 320px ) {
+    @media screen and ( max-width: $medida ){
+    @content;
+    }
+}
+
+@mixin tb( $min: 321px , $max: 768px  ){
+    @media screen and ( min-width: $min ) and (max-width: $max){
+    @content
+    }
+}
+
+@mixin pc( $miin: 769px , $maax: 1024px  ){
+    @media screen and ( min-width: $miin ) and (max-width: $maax){
+    @content
+    }
+}
+
 main {
 
     background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%);
@@ -15,12 +33,15 @@ main {
     .container {
         .fila_uno {
             #section_car1 {
-                padding: 0 !important;
-                margin-left: 5% !important;
+                padding: 0;
+                margin-left: 5%;
                 text-align: center;
                 color: white;
                 transition: transform 0.5s ease;
                 height: 417.5px;
+                @include mb(){max-width: 91%; height: 273px; margin-left: 5; margin-bottom: 6%;}
+                @include tb(){height: 269px; padding: 0; margin-left: 1.5%; width: 29%;}
+                @include pc(){height: 310px;}
 
                 #section_car1:hover {
                     transform: scale(1.03);
@@ -37,94 +58,159 @@ main {
                         font-size: x-large;
                         text-align: center;
                         color: white;
+                        @include mb(){font-size: large;}
+                        @include tb(){font-size: medium;}
                     }
 
                     p {
                         font-size: 20px;
                         color: white;
                         text-align: center;
+                        @include mb(){font-size: small;}
+                        @include tb(){font-size: small;}
+                        @include pc(){font-size: smaller;}
                     }
                 }
             }
 
             #video_sec1 {
-                margin-left: 0.3% !important;
+                margin-left: 0.3%;
                 width: 58.1%;
+                @include mb(){width: 100%;}
+                @include tb(){width: 69%;}
+                @include pc(){width: 60%;}
+
+                video {
+                    @include mb(){max-width: 100%;}
+                    @include tb(){max-width: 100%;}
+                    @include pc(){max-width: 100%;}
+                }
             }
         }
 
         .fila_dos {
             #video_sec2 {
-                margin-left: 4% !important;
+                margin-left: 4%;
                 width: 58.6%;
+                @include mb(){width: 100%; margin-left: 0; margin-bottom: 5%;}
+                @include tb(){width: 69%; margin-left: 0;}
+                @include pc(){width: 60%;}
+
+                video {
+                    @include mb(){max-width: 100%;}
+                    @include tb(){max-width: 100%;}
+                    @include pc(){max-width: 100%;}
+                }
             }
 
             #section_car2 {
-                padding: 0 !important;
+                padding: 0;
                 text-align: center;
                 font-size: x-large;
                 color: white;
                 transition: transform 0.5s ease;
                 height: 421.28px;
+                @include mb(){height: 276px; max-width: 91%; margin-left: 5%; margin-bottom: 1%;}
+                @include tb(){height: 269px; padding: 0; width: 29%;}
+                @include pc(){height: 310px;}
 
                 #section_car2:hover {
                     transform: scale(1.03);
                 }
 
                 .card-link {
-                    margin: 0 !important;
+                    margin: 0;
+                }
+
+                .card-body {
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+    
+                    h5 {
+                        font-size: x-large;
+                        text-align: center;
+                        color: white;
+                        @include mb(){font-size: large;}
+                        @include tb(){font-size: large;}
+                        @include pc(){font-size: medium;}
+                    }
+    
+                    p {
+                        font-size: 20px;
+                        color: white;
+                        text-align: center;
+                        @include mb(){font-size: small;}
+                        @include tb(){font-size: small;}
+                        @include pc(){font-size: small;}
+                    }
                 }
             }
 
-            .card-body {
-                background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
-
-                h5 {
-                    font-size: x-large;
-                    text-align: center;
-                    color: white;
-                }
-
-                p {
-                    font-size: 20px;
-                    color: white;
-                    text-align: center;
-                }
-            }
+            
         }
 
         .fila_tres {
             #video_sec3 {
                 width: 45%;
                 margin-left: 4%;
+                @include mb(){width: 100%; margin-bottom: 5%; margin-left: 0;}
+                @include tb(){width: 49%; margin-left: 0;}
+                @include pc(){width: 46%; margin-left: 4%;}
 
                 video {
-                    width: 100%;
+                    max-width: 100%;
+                    @include mb(){max-width: 100%;}
+                    @include tb(){max-width: 100%;}
+                    @include pc(){max-width: 100%;}
                 }
             }
 
             #video_sec3_2 {
                 width: 45%;
                 margin-left: 3%;
+                @include mb(){width: 100%; margin-left: 0;}
+                @include tb(){width: 49%; margin-left: 2%;}
+                @include pc(){width: 46%; margin-left: 2.5%;}
 
                 video {
-                    width: 100%;
+                    max-width: 100%;
+                    @include mb(){max-width: 100%;}
+                    @include tb(){max-width: 100%;}
+                    @include pc(){max-width: 100%;}
                 }
             }
         }
 
         .fila_cuatro {
             #video_sec4 {
-                margin-left: 4% !important;
+                margin-left: 4%;
+                @include mb(){width: 100%; margin-left: 0;}
+                @include tb(){width: 70%; margin-left: 0;}
+                @include pc(){width: 70%;}
+
+                video {
+                    @include mb(){max-width: 100%;}
+                    @include tb(){max-width: 100%;}
+                    @include pc(){max-width: 100%;}
+                }
             }
 
             #card_sec4 {
                 border: none;
                 height: 486px;
+                @include mb(){height: 1px; visibility: hidden;}
+                @include tb(){max-width: 30% ; height: 274px;}
+                @include pc(){max-width: 24.5%; height: 368px;}
 
                 .card-body {
                     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
                     color: white;
+
+                    h2{
+                        font-size: 50px;
+                        @include mb(){font-size: 1px;}
+                        @include tb(){font-size: 20px;}
+                        @include pc(){font-size: 30px;}
+                    }
                 }
             }
         }

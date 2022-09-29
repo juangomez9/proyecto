@@ -1,3 +1,21 @@
+@mixin mb( $medida: 320px ) {
+    @media screen and ( max-width: $medida ){
+    @content;
+    }
+}
+
+@mixin tb( $min: 321px , $max: 768px  ){
+    @media screen and ( min-width: $min ) and (max-width: $max){
+    @content
+    }
+}
+
+@mixin pc( $miin: 769px , $maax: 1024px  ){
+    @media screen and ( min-width: $miin ) and (max-width: $maax){
+    @content
+    }
+}
+
 header {
 
     background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%);
@@ -6,8 +24,10 @@ header {
         .redes {
             .container {
                 .row {
+                    @include mb(){height: 1px;}
                     a {
                         margin: 2%;
+                        @include mb(){margin: 0; visibility: hidden;}
 
                         img {
                             width: 25px;
@@ -24,6 +44,7 @@ header {
         div {
             a {
                 margin: 1%;
+                @include mb(){margin: 2%; margin-top: 5%;}
             }
         }
     }
