@@ -1,18 +1,18 @@
-@mixin mb( $medida: 320px ) {
-    @media screen and ( max-width: $medida ){
-    @content;
+@mixin mb($medida: 320px) {
+    @media screen and (max-width: $medida) {
+        @content;
     }
 }
 
-@mixin tb( $min: 321px , $max: 768px  ){
-    @media screen and ( min-width: $min ) and (max-width: $max){
-    @content
+@mixin tb($min: 321px, $max: 768px) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+        @content
     }
 }
 
-@mixin pc( $miin: 769px , $maax: 1024px  ){
-    @media screen and ( min-width: $miin ) and (max-width: $maax){
-    @content
+@mixin pc($miin: 769px, $maax: 1024px) {
+    @media screen and (min-width: $miin) and (max-width: $maax) {
+        @content
     }
 }
 
@@ -31,20 +31,60 @@ main {
     }
 
     .container {
+        .fila_inicial {
+            .card_inicio {
+                background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+                margin-left: 5%;
+                color: white;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    h3 {
+                        font-size: 40px;
+                        margin-bottom: 5%;
+                    }
+
+                    h3:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+
+            }
+
+            .imagen_inicio {
+                width: 56%;
+                padding: 0;
+
+                .imagen_inicio img {
+                    max-width: 100%;
+                }
+            }
+        }
+
         .fila_uno {
             #section_car1 {
-                padding: 0;
-                margin-left: 5%;
-                text-align: center;
-                color: white;
-                transition: transform 0.5s ease;
-                height: 417.5px;
-                @include mb(){max-width: 91%; height: 273px; margin-left: 5; margin-bottom: 6%;}
-                @include tb(){height: 269px; padding: 0; margin-left: 1.5%; width: 29%;}
-                @include pc(){height: 310px;}
+                @extend %section_car;
+                margin-left: 4.9%;
 
-                #section_car1:hover {
-                    transform: scale(1.03);
+                @include mb() {
+                    max-width: 91%;
+                    height: 273px;
+                    margin-left: 5;
+                    margin-bottom: 6%;
+                }
+
+                @include tb() {
+                    height: 269px;
+                    padding: 0;
+                    margin-left: 1.5%;
+                    width: 29%;
+                }
+
+                @include pc() {
+                    height: 310px;
                 }
 
                 .card-link {
@@ -54,36 +94,84 @@ main {
                 .card-body {
                     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
 
+                    a {
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: $paleta-colores("blanco");
+                    }
+
                     h5 {
                         font-size: x-large;
                         text-align: center;
                         color: white;
-                        @include mb(){font-size: large;}
-                        @include tb(){font-size: medium;}
+                        text-decoration: none;
+
+                        @include mb() {
+                            font-size: large;
+                        }
+
+                        @include tb() {
+                            font-size: medium;
+                        }
                     }
 
                     p {
-                        font-size: 20px;
-                        color: white;
+                        font-size: large;
+                        color: $paleta-colores("blanco");
                         text-align: center;
-                        @include mb(){font-size: small;}
-                        @include tb(){font-size: small;}
-                        @include pc(){font-size: smaller;}
+
+                        @include mb() {
+                            font-size: small;
+                        }
+
+                        @include tb() {
+                            font-size: small;
+                        }
+
+                        @include pc() {
+                            font-size: smaller;
+                        }
                     }
                 }
             }
 
             #video_sec1 {
-                margin-left: 0.3%;
-                width: 58.1%;
-                @include mb(){width: 100%;}
-                @include tb(){width: 69%;}
-                @include pc(){width: 60%;}
+                margin-left: 1.5%;
+                width: 56.1%;
 
-                video {
-                    @include mb(){max-width: 100%;}
-                    @include tb(){max-width: 100%;}
-                    @include pc(){max-width: 100%;}
+
+                @include mb() {
+                    width: 100%;
+                }
+
+                @include tb() {
+                    width: 69%;
+                }
+
+                @include pc() {
+                    width: 60%;
+                }
+
+                .video_uno {
+
+                    video {
+                        max-width: 100%;
+
+                        @include mb() {
+                            max-width: 100%;
+                        }
+
+                        @include tb() {
+                            max-width: 100%;
+                        }
+
+                        @include pc() {
+                            max-width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -91,31 +179,59 @@ main {
         .fila_dos {
             #video_sec2 {
                 margin-left: 4%;
-                width: 58.6%;
-                @include mb(){width: 100%; margin-left: 0; margin-bottom: 5%;}
-                @include tb(){width: 69%; margin-left: 0;}
-                @include pc(){width: 60%;}
+                width: 56.1%;
+
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 5%;
+                }
+
+                @include tb() {
+                    width: 69%;
+                    margin-left: 0;
+                }
+
+                @include pc() {
+                    width: 60%;
+                }
 
                 video {
-                    @include mb(){max-width: 100%;}
-                    @include tb(){max-width: 100%;}
-                    @include pc(){max-width: 100%;}
+                    max-width: 100%;
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
                 }
             }
 
             #section_car2 {
-                padding: 0;
-                text-align: center;
-                font-size: x-large;
-                color: white;
-                transition: transform 0.5s ease;
-                height: 421.28px;
-                @include mb(){height: 276px; max-width: 91%; margin-left: 5%; margin-bottom: 1%;}
-                @include tb(){height: 269px; padding: 0; width: 29%;}
-                @include pc(){height: 310px;}
+                @extend %section_car;
+                margin-left: 1.5%;
 
-                #section_car2:hover {
-                    transform: scale(1.03);
+                @include mb() {
+                    height: 276px;
+                    max-width: 91%;
+                    margin-left: 5%;
+                    margin-bottom: 1%;
+                }
+
+                @include tb() {
+                    height: 269px;
+                    padding: 0;
+                    width: 29%;
+                }
+
+                @include pc() {
+                    height: 310px;
                 }
 
                 .card-link {
@@ -124,92 +240,525 @@ main {
 
                 .card-body {
                     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
-    
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: $paleta-colores("blanco");
+                    }
+
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: white;
-                        @include mb(){font-size: large;}
-                        @include tb(){font-size: large;}
-                        @include pc(){font-size: medium;}
+                        color: $paleta-colores("blanco");
+
+                        @include mb() {
+                            font-size: large;
+                        }
+
+                        @include tb() {
+                            font-size: large;
+                        }
+
+                        @include pc() {
+                            font-size: medium;
+                        }
                     }
-    
+
                     p {
-                        font-size: 20px;
+                        font-size: large;
                         color: white;
                         text-align: center;
-                        @include mb(){font-size: small;}
-                        @include tb(){font-size: small;}
-                        @include pc(){font-size: small;}
+
+                        @include mb() {
+                            font-size: small;
+                        }
+
+                        @include tb() {
+                            font-size: small;
+                        }
+
+                        @include pc() {
+                            font-size: small;
+                        }
                     }
                 }
             }
 
-            
+
         }
 
         .fila_tres {
             #video_sec3 {
-                width: 45%;
+                width: 44.8%;
                 margin-left: 4%;
-                @include mb(){width: 100%; margin-bottom: 5%; margin-left: 0;}
-                @include tb(){width: 49%; margin-left: 0;}
-                @include pc(){width: 46%; margin-left: 4%;}
+
+                @include mb() {
+                    width: 100%;
+                    margin-bottom: 5%;
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 49%;
+                    margin-left: 0;
+                }
+
+                @include pc() {
+                    width: 46%;
+                    margin-left: 4%;
+                }
 
                 video {
                     max-width: 100%;
-                    @include mb(){max-width: 100%;}
-                    @include tb(){max-width: 100%;}
-                    @include pc(){max-width: 100%;}
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
                 }
             }
 
             #video_sec3_2 {
-                width: 45%;
-                margin-left: 3%;
-                @include mb(){width: 100%; margin-left: 0;}
-                @include tb(){width: 49%; margin-left: 2%;}
-                @include pc(){width: 46%; margin-left: 2.5%;}
+                width: 44.8%;
+                margin-left: 2.5%;
+
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 49%;
+                    margin-left: 2%;
+                }
+
+                @include pc() {
+                    width: 46%;
+                    margin-left: 2.5%;
+                }
 
                 video {
                     max-width: 100%;
-                    @include mb(){max-width: 100%;}
-                    @include tb(){max-width: 100%;}
-                    @include pc(){max-width: 100%;}
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
                 }
             }
         }
 
         .fila_cuatro {
             #video_sec4 {
+                width: 56.1;
                 margin-left: 4%;
-                @include mb(){width: 100%; margin-left: 0;}
-                @include tb(){width: 70%; margin-left: 0;}
-                @include pc(){width: 70%;}
+
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 70%;
+                    margin-left: 0;
+                }
+
+                @include pc() {
+                    width: 70%;
+                }
 
                 video {
-                    @include mb(){max-width: 100%;}
-                    @include tb(){max-width: 100%;}
-                    @include pc(){max-width: 100%;}
+                    max-width: 100%;
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
                 }
             }
 
             #card_sec4 {
                 border: none;
+                max-width: 25.5%;
                 height: 486px;
-                @include mb(){height: 1px; visibility: hidden;}
-                @include tb(){max-width: 30% ; height: 274px;}
-                @include pc(){max-width: 24.5%; height: 368px;}
+
+                @include mb() {
+                    height: 1px;
+                    visibility: hidden;
+                }
+
+                @include tb() {
+                    max-width: 30%;
+                    height: 274px;
+                }
+
+                @include pc() {
+                    max-width: 24.5%;
+                    height: 368px;
+                }
 
                 .card-body {
                     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
                     color: white;
 
-                    h2{
+                    a {
+                        text-decoration: none;
+                        color: $paleta-colores("blanco");
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: $paleta-colores("blanco");
+                    }
+
+                    h2 {
                         font-size: 50px;
-                        @include mb(){font-size: 1px;}
-                        @include tb(){font-size: 20px;}
-                        @include pc(){font-size: 30px;}
+
+                        @include mb() {
+                            font-size: 1px;
+                        }
+
+                        @include tb() {
+                            font-size: 20px;
+                        }
+
+                        @include pc() {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fila_cinco {
+            #section_car5 {
+                @extend %section_car;
+                margin-left: 4%;
+
+                @include mb() {
+                    height: 276px;
+                    max-width: 91%;
+                    margin-left: 5%;
+                    margin-bottom: 1%;
+                }
+
+                @include tb() {
+                    height: 269px;
+                    padding: 0;
+                    width: 29%;
+                }
+
+                @include pc() {
+                    height: 310px;
+                }
+
+                .card-link {
+                    margin: 0;
+                }
+
+                .card-body {
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: $paleta-colores("blanco");
+                    }
+
+                    h5 {
+                        font-size: x-large;
+                        text-align: center;
+                        color: $paleta-colores("blanco");
+
+                        @include mb() {
+                            font-size: large;
+                        }
+
+                        @include tb() {
+                            font-size: large;
+                        }
+
+                        @include pc() {
+                            font-size: medium;
+                        }
+                    }
+
+                    p {
+                        font-size: large;
+                        color: $paleta-colores("blanco");
+                        text-align: center;
+
+                        @include mb() {
+                            font-size: small;
+                        }
+
+                        @include tb() {
+                            font-size: small;
+                        }
+
+                        @include pc() {
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+
+            .con_imagen {
+                width: 56.5%;
+                margin-left: 2.3%;
+
+                .imagen_cinco {
+                    background: url(../assets/galeria/gonzales-ruiz-amsterdam.jpg);
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+    
+                    .ancor5 {
+                        margin-right: 0%;
+                        height: 45%;
+                        background: linear-gradient(0deg, rgba(39,27,69,1) 0%, rgba(39,27,69,0.927608543417367) 30%, rgba(39,27,69,0.908000700280112) 70%, rgba(68,51,93,0) 100%);                        padding-left: 4%;
+                        padding-top: 9%;
+                        display: flex;
+                        padding-left: 1%;
+    
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 20px;
+                            margin-left: 3%;
+    
+                        }
+    
+                        a:hover {
+                            text-decoration: underline;
+                        }
+
+                        a img {
+                            width: 70px;
+                        }
+    
+                        a h2 {}
+                    }
+                }
+            }
+        }
+
+        .fila_seis {
+            #video_sec6 {
+                width: 44.8%;
+                margin-left: 4%;
+
+                @include mb() {
+                    width: 100%;
+                    margin-bottom: 5%;
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 49%;
+                    margin-left: 0;
+                }
+
+                @include pc() {
+                    width: 46%;
+                    margin-left: 4%;
+                }
+
+                video {
+                    max-width: 100%;
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            #video_sec6_2 {
+                width: 44.8%;
+                margin-left: 2.5%;
+
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 49%;
+                    margin-left: 2%;
+                }
+
+                @include pc() {
+                    width: 46%;
+                    margin-left: 2.5%;
+                }
+
+                video {
+                    max-width: 100%;
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .fila_siete {
+            .con_imagen{
+                width: 56.5%;
+                margin-left: 4%;
+
+                .imagen_siete {
+                    background: url(../assets/galeria/arianasanches-josemaria-amsterdam.jpg);
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+
+                    .ancor7 {
+                        margin-right: 0%;
+                        height: 45%;
+                        background: linear-gradient(0deg, rgba(39,27,69,1) 0%, rgba(39,27,69,0.927608543417367) 30%, rgba(39,27,69,0.908000700280112) 70%, rgba(68,51,93,0) 100%);                        padding-left: 4%;
+                        padding-top: 9%;
+                        display: flex;
+                        padding-left: 1%;
+    
+                        a {
+                            text-decoration: none;
+                            color: $paleta-colores("blanco");
+                            font-weight: 20px;
+                            margin-left: 3%;
+    
+                        }
+    
+                        a:hover {
+                            text-decoration: underline;
+                        }
+
+                        a img {
+                            width: 70px;
+                        }
+    
+                        a h2 {}
+                    }
+                }
+            }
+
+            #section_car7 {
+                @extend %section_car;
+                margin-left: 2.3%;
+
+                @include mb() {
+                    height: 276px;
+                    max-width: 91%;
+                    margin-left: 5%;
+                    margin-bottom: 1%;
+                }
+
+                @include tb() {
+                    height: 269px;
+                    padding: 0;
+                    width: 29%;
+                }
+
+                @include pc() {
+                    height: 310px;
+                }
+
+                .card-link {
+                    margin: 0;
+                }
+
+                .card-body {
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: $paleta-colores("blanco");
+                    }
+
+                    h5 {
+                        font-size: x-large;
+                        text-align: center;
+                        color: $paleta-colores("blanco");
+
+                        @include mb() {
+                            font-size: large;
+                        }
+
+                        @include tb() {
+                            font-size: large;
+                        }
+
+                        @include pc() {
+                            font-size: medium;
+                        }
+                    }
+
+                    p {
+                        font-size: large;
+                        color: $paleta-colores("blanco");
+                        text-align: center;
+
+                        @include mb() {
+                            font-size: small;
+                        }
+
+                        @include tb() {
+                            font-size: small;
+                        }
+
+                        @include pc() {
+                            font-size: small;
+                        }
                     }
                 }
             }
