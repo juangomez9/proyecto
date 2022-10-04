@@ -26,7 +26,7 @@ main {
         }
 
         h2 {
-            color: white;
+            color: map-get($paleta-colores"blanco");
         }
     }
 
@@ -39,7 +39,7 @@ main {
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: map-get($paleta-colores"blanco");
 
                     h3 {
                         font-size: 40px;
@@ -100,13 +100,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: white;
+                        color: map-get($paleta-colores"blanco");
                         text-decoration: none;
 
                         @include mb() {
@@ -120,7 +120,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                         text-align: center;
 
                         @include mb() {
@@ -247,13 +247,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
 
                         @include mb() {
                             font-size: large;
@@ -270,7 +270,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: white;
+                        color: map-get($paleta-colores"blanco");
                         text-align: center;
 
                         @include mb() {
@@ -428,12 +428,12 @@ main {
 
                     a {
                         text-decoration: none;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                     }
 
                     a:hover {
                         text-decoration: underline;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                     }
 
                     h2 {
@@ -490,13 +490,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
 
                         @include mb() {
                             font-size: large;
@@ -513,7 +513,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                         text-align: center;
 
                         @include mb() {
@@ -552,7 +552,7 @@ main {
     
                         a {
                             text-decoration: none;
-                            color: white;
+                            color: map-get($paleta-colores"blanco");
                             font-weight: 20px;
                             margin-left: 3%;
     
@@ -669,7 +669,7 @@ main {
     
                         a {
                             text-decoration: none;
-                            color: $paleta-colores("blanco");
+                            color: map-get($paleta-colores"blanco");
                             font-weight: 20px;
                             margin-left: 3%;
     
@@ -722,13 +722,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
 
                         @include mb() {
                             font-size: large;
@@ -745,7 +745,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: $paleta-colores("blanco");
+                        color: map-get($paleta-colores"blanco");
                         text-align: center;
 
                         @include mb() {
