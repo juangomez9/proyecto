@@ -19,23 +19,25 @@ header {
       header .fila_header div a {
         margin: 2%;
         margin-top: 5%; } }
-  header .fila_nav nav .container-fluid a {
-    text-decoration: none;
-    font-family: Sport2 !important;
-    font-size: x-large;
-    margin: 2%;
-    color: white !important;
+  header .fila_nav nav {
     padding: 0; }
-  header .fila_nav nav .container-fluid .navbar-toggler {
-    border: 1px solid white !important; }
-  header .fila_nav nav .container-fluid .container-fluid .barranav .nav-item {
-    margin: 2%; }
+    header .fila_nav nav .container-fluid a {
+      text-decoration: none;
+      font-family: Sport2 !important;
+      font-size: x-large;
+      margin: 2%;
+      color: white !important;
+      padding: 0; }
+    header .fila_nav nav .container-fluid .navbar-toggler {
+      border: 1px solid white !important; }
+    header .fila_nav nav .container-fluid .container-fluid .barranav .nav-item {
+      margin: 2%; }
 
 main {
   background: linear-gradient(90deg, #212529 10%, #484d52 30%, #484d52 70%, #212529 90%); }
   main .fila_separador .imgsep {
     height: 4px; }
-  main .fila_separador h2, main .fila_separador section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text .card-body main .fila_separador p {
+  main .fila_separador h2, main .fila_separador section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .card-body .fila_separador p {
     color: white; }
   main .container .fila_inicial .card_inicio {
     background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%);
@@ -317,16 +319,16 @@ main {
       main .container .fila_cuatro #card_sec4 .card-body a:hover {
         text-decoration: underline;
         color: white; }
-      main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
+      main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .container .fila_cuatro #card_sec4 .card-body p {
         font-size: 50px; }
         @media screen and (max-width: 320px) {
-          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
+          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .container .fila_cuatro #card_sec4 .card-body p {
             font-size: 1px; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
+          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .container .fila_cuatro #card_sec4 .card-body p {
             font-size: 20px; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
+          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .container .fila_cuatro #card_sec4 .card-body p {
             font-size: 30px; } }
   main .container .fila_cinco .section_car5 {
     margin-left: 4%; }
@@ -536,9 +538,16 @@ main {
           main .container .fila_siete .section_car7 .card-body p {
             font-size: small; } }
 
-section .row .card_rank .card {
+main .row .img_sep, main .row h2, main section .row .card_rank .card .row .card_text .card-body p {
+  color: white; }
+
+main .container h3 {
+  color: white; }
+
+main section .row .card_rank .card {
+  border: 1px solid white;
   background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
-  section .row .card_rank .card .row .card_text .card-body h2, section .row .card_rank .card .row .card_text .card-body p {
+  main section .row .card_rank .card .row .card_text .card-body h2, main section .row .card_rank .card .row .card_text .card-body p {
     color: white; }
 
 footer .fila_footer {

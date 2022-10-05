@@ -1,17 +1,38 @@
-section {
-    .row {
-        .card_rank {
-            .card {
-                background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+main {
 
-                .row {
-                    .card_text {
-                        .card-body{
-                            h2{
-                                color: white;
-                            }
-                            p {
-                                @extend h2;
+    .row {
+        .img_sep {
+            color: white;
+        }
+
+        h2 {
+            @extend .img_sep;
+        }
+    }
+
+    .container{
+        h3 {
+            color: white;
+        }
+    }
+
+    section {
+        .row {
+            .card_rank {
+                .card {
+                    border: 1px solid white;
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+
+                    .row {
+                        .card_text {
+                            .card-body {
+                                h2 {
+                                    color: white;
+                                }
+
+                                p {
+                                    @extend h2;
+                                }
                             }
                         }
                     }
