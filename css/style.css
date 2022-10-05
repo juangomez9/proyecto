@@ -35,7 +35,7 @@ main {
   background: linear-gradient(90deg, #212529 10%, #484d52 30%, #484d52 70%, #212529 90%); }
   main .fila_separador .imgsep {
     height: 4px; }
-  main .fila_separador h2 {
+  main .fila_separador h2, main .fila_separador section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text .card-body main .fila_separador p {
     color: white; }
   main .container .fila_inicial .card_inicio {
     background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%);
@@ -54,59 +54,60 @@ main {
     padding: 0; }
     main .container .fila_inicial .imagen_inicio .imagen_inicio img {
       max-width: 100%; }
-  main .container .fila_uno #section_car1 {
+  main .container .fila_uno .section_car1 {
     padding: 0;
-    margin-left: 4.9%;
     text-align: center;
+    font-size: x-large;
     color: white;
-    height: 402px; }
+    height: 402px;
+    margin-left: 4.9%; }
     @media screen and (max-width: 320px) {
-      main .container .fila_uno #section_car1 {
+      main .container .fila_uno .section_car1 {
         max-width: 91%;
         height: 273px;
         margin-left: 5;
         margin-bottom: 6%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
-      main .container .fila_uno #section_car1 {
+      main .container .fila_uno .section_car1 {
         height: 269px;
         padding: 0;
         margin-left: 1.5%;
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      main .container .fila_uno #section_car1 {
+      main .container .fila_uno .section_car1 {
         height: 310px; } }
-    main .container .fila_uno #section_car1 .card-link {
+    main .container .fila_uno .section_car1 .card-link {
       margin: 0 !important; }
-    main .container .fila_uno #section_car1 .card-body {
+    main .container .fila_uno .section_car1 .card-body {
       background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
-      main .container .fila_uno #section_car1 .card-body a {
+      main .container .fila_uno .section_car1 .card-body a {
         text-decoration: none; }
-      main .container .fila_uno #section_car1 .card-body a:hover {
+      main .container .fila_uno .section_car1 .card-body a:hover {
         text-decoration: underline;
         color: white; }
-      main .container .fila_uno #section_car1 .card-body h5 {
+      main .container .fila_uno .section_car1 .card-body h5 {
         font-size: x-large;
         text-align: center;
         color: white;
         text-decoration: none; }
         @media screen and (max-width: 320px) {
-          main .container .fila_uno #section_car1 .card-body h5 {
+          main .container .fila_uno .section_car1 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_uno #section_car1 .card-body h5 {
+          main .container .fila_uno .section_car1 .card-body h5 {
             font-size: medium; } }
-      main .container .fila_uno #section_car1 .card-body p {
+      main .container .fila_uno .section_car1 .card-body p {
         font-size: large;
         color: white;
         text-align: center; }
         @media screen and (max-width: 320px) {
-          main .container .fila_uno #section_car1 .card-body p {
+          main .container .fila_uno .section_car1 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_uno #section_car1 .card-body p {
+          main .container .fila_uno .section_car1 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_uno #section_car1 .card-body p {
+          main .container .fila_uno .section_car1 .card-body p {
             font-size: smaller; } }
   main .container .fila_uno #video_sec1 {
     margin-left: 1.5%;
@@ -157,60 +158,61 @@ main {
       @media screen and (min-width: 769px) and (max-width: 1024px) {
         main .container .fila_dos #video_sec2 video {
           max-width: 100%; } }
-  main .container .fila_dos #section_car2 {
+  main .container .fila_dos .section_car2 {
     padding: 0;
-    margin-left: 1.5%;
     text-align: center;
+    font-size: x-large;
     color: white;
-    height: 402px; }
+    height: 402px;
+    margin-left: 1.5%; }
     @media screen and (max-width: 320px) {
-      main .container .fila_dos #section_car2 {
+      main .container .fila_dos .section_car2 {
         height: 276px;
         max-width: 91%;
         margin-left: 5%;
         margin-bottom: 1%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
-      main .container .fila_dos #section_car2 {
+      main .container .fila_dos .section_car2 {
         height: 269px;
         padding: 0;
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      main .container .fila_dos #section_car2 {
+      main .container .fila_dos .section_car2 {
         height: 310px; } }
-    main .container .fila_dos #section_car2 .card-link {
+    main .container .fila_dos .section_car2 .card-link {
       margin: 0; }
-    main .container .fila_dos #section_car2 .card-body {
+    main .container .fila_dos .section_car2 .card-body {
       background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
-      main .container .fila_dos #section_car2 .card-body a {
+      main .container .fila_dos .section_car2 .card-body a {
         text-decoration: none; }
-      main .container .fila_dos #section_car2 .card-body a:hover {
+      main .container .fila_dos .section_car2 .card-body a:hover {
         text-decoration: underline;
         color: white; }
-      main .container .fila_dos #section_car2 .card-body h5 {
+      main .container .fila_dos .section_car2 .card-body h5 {
         font-size: x-large;
         text-align: center;
         color: white; }
         @media screen and (max-width: 320px) {
-          main .container .fila_dos #section_car2 .card-body h5 {
+          main .container .fila_dos .section_car2 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_dos #section_car2 .card-body h5 {
+          main .container .fila_dos .section_car2 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_dos #section_car2 .card-body h5 {
+          main .container .fila_dos .section_car2 .card-body h5 {
             font-size: medium; } }
-      main .container .fila_dos #section_car2 .card-body p {
+      main .container .fila_dos .section_car2 .card-body p {
         font-size: large;
         color: white;
         text-align: center; }
         @media screen and (max-width: 320px) {
-          main .container .fila_dos #section_car2 .card-body p {
+          main .container .fila_dos .section_car2 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_dos #section_car2 .card-body p {
+          main .container .fila_dos .section_car2 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_dos #section_car2 .card-body p {
+          main .container .fila_dos .section_car2 .card-body p {
             font-size: small; } }
   main .container .fila_tres #video_sec3 {
     width: 44.8%;
@@ -315,72 +317,67 @@ main {
       main .container .fila_cuatro #card_sec4 .card-body a:hover {
         text-decoration: underline;
         color: white; }
-      main .container .fila_cuatro #card_sec4 .card-body h2 {
+      main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
         font-size: 50px; }
         @media screen and (max-width: 320px) {
-          main .container .fila_cuatro #card_sec4 .card-body h2 {
+          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
             font-size: 1px; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_cuatro #card_sec4 .card-body h2 {
+          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
             font-size: 20px; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_cuatro #card_sec4 .card-body h2 {
+          main .container .fila_cuatro #card_sec4 .card-body h2, main .container .fila_cuatro #card_sec4 section .row .card_rank .card .row .card_text .card-body p, section .row .card_rank .card .row .card_text main .container .fila_cuatro #card_sec4 .card-body p {
             font-size: 30px; } }
-  main .container .fila_cinco #section_car5 {
-    padding: 0;
-    margin-left: 4%;
-    text-align: center;
-    font-size: x-large;
-    color: white;
-    height: 402px; }
+  main .container .fila_cinco .section_car5 {
+    margin-left: 4%; }
     @media screen and (max-width: 320px) {
-      main .container .fila_cinco #section_car5 {
+      main .container .fila_cinco .section_car5 {
         height: 276px;
         max-width: 91%;
         margin-left: 5%;
         margin-bottom: 1%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
-      main .container .fila_cinco #section_car5 {
+      main .container .fila_cinco .section_car5 {
         height: 269px;
         padding: 0;
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      main .container .fila_cinco #section_car5 {
+      main .container .fila_cinco .section_car5 {
         height: 310px; } }
-    main .container .fila_cinco #section_car5 .card-link {
+    main .container .fila_cinco .section_car5 .card-link {
       margin: 0; }
-    main .container .fila_cinco #section_car5 .card-body {
+    main .container .fila_cinco .section_car5 .card-body {
       background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
-      main .container .fila_cinco #section_car5 .card-body a {
+      main .container .fila_cinco .section_car5 .card-body a {
         text-decoration: none; }
-      main .container .fila_cinco #section_car5 .card-body a:hover {
+      main .container .fila_cinco .section_car5 .card-body a:hover {
         text-decoration: underline;
         color: white; }
-      main .container .fila_cinco #section_car5 .card-body h5 {
+      main .container .fila_cinco .section_car5 .card-body h5 {
         font-size: x-large;
         text-align: center;
         color: white; }
         @media screen and (max-width: 320px) {
-          main .container .fila_cinco #section_car5 .card-body h5 {
+          main .container .fila_cinco .section_car5 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_cinco #section_car5 .card-body h5 {
+          main .container .fila_cinco .section_car5 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_cinco #section_car5 .card-body h5 {
+          main .container .fila_cinco .section_car5 .card-body h5 {
             font-size: medium; } }
-      main .container .fila_cinco #section_car5 .card-body p {
+      main .container .fila_cinco .section_car5 .card-body p {
         font-size: large;
         color: white;
         text-align: center; }
         @media screen and (max-width: 320px) {
-          main .container .fila_cinco #section_car5 .card-body p {
+          main .container .fila_cinco .section_car5 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_cinco #section_car5 .card-body p {
+          main .container .fila_cinco .section_car5 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_cinco #section_car5 .card-body p {
+          main .container .fila_cinco .section_car5 .card-body p {
             font-size: small; } }
   main .container .fila_cinco .con_imagen {
     width: 56.5%;
@@ -487,62 +484,62 @@ main {
           text-decoration: underline; }
         main .container .fila_siete .con_imagen .imagen_siete .ancor7 a img {
           width: 70px; }
-  main .container .fila_siete #section_car7 {
-    padding: 0;
-    margin-left: 2.3%;
-    text-align: center;
-    font-size: x-large;
-    color: white;
-    height: 402px; }
+  main .container .fila_siete .section_car7 {
+    margin-left: 2.3%; }
     @media screen and (max-width: 320px) {
-      main .container .fila_siete #section_car7 {
+      main .container .fila_siete .section_car7 {
         height: 276px;
         max-width: 91%;
         margin-left: 5%;
         margin-bottom: 1%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
-      main .container .fila_siete #section_car7 {
+      main .container .fila_siete .section_car7 {
         height: 269px;
         padding: 0;
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      main .container .fila_siete #section_car7 {
+      main .container .fila_siete .section_car7 {
         height: 310px; } }
-    main .container .fila_siete #section_car7 .card-link {
+    main .container .fila_siete .section_car7 .card-link {
       margin: 0; }
-    main .container .fila_siete #section_car7 .card-body {
+    main .container .fila_siete .section_car7 .card-body {
       background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
-      main .container .fila_siete #section_car7 .card-body a {
+      main .container .fila_siete .section_car7 .card-body a {
         text-decoration: none; }
-      main .container .fila_siete #section_car7 .card-body a:hover {
+      main .container .fila_siete .section_car7 .card-body a:hover {
         text-decoration: underline;
         color: white; }
-      main .container .fila_siete #section_car7 .card-body h5 {
+      main .container .fila_siete .section_car7 .card-body h5 {
         font-size: x-large;
         text-align: center;
         color: white; }
         @media screen and (max-width: 320px) {
-          main .container .fila_siete #section_car7 .card-body h5 {
+          main .container .fila_siete .section_car7 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_siete #section_car7 .card-body h5 {
+          main .container .fila_siete .section_car7 .card-body h5 {
             font-size: large; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_siete #section_car7 .card-body h5 {
+          main .container .fila_siete .section_car7 .card-body h5 {
             font-size: medium; } }
-      main .container .fila_siete #section_car7 .card-body p {
+      main .container .fila_siete .section_car7 .card-body p {
         font-size: large;
         color: white;
         text-align: center; }
         @media screen and (max-width: 320px) {
-          main .container .fila_siete #section_car7 .card-body p {
+          main .container .fila_siete .section_car7 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_siete #section_car7 .card-body p {
+          main .container .fila_siete .section_car7 .card-body p {
             font-size: small; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_siete #section_car7 .card-body p {
+          main .container .fila_siete .section_car7 .card-body p {
             font-size: small; } }
+
+section .row .card_rank .card {
+  background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
+  section .row .card_rank .card .row .card_text .card-body h2, section .row .card_rank .card .row .card_text .card-body p {
+    color: white; }
 
 footer .fila_footer {
   background: linear-gradient(90deg, #212529 10%, #484d52 30%, #484d52 70%, #212529 90%); }

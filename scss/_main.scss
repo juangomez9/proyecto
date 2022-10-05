@@ -26,7 +26,7 @@ main {
         }
 
         h2 {
-            color: map-get($paleta-colores"blanco");
+            color: map-get($paleta-colores, "blanco" );
         }
     }
 
@@ -39,7 +39,7 @@ main {
 
                 a {
                     text-decoration: none;
-                    color: map-get($paleta-colores"blanco");
+                    color: map-get($paleta-colores, "blanco" );
 
                     h3 {
                         font-size: 40px;
@@ -65,8 +65,12 @@ main {
         }
 
         .fila_uno {
-            #section_car1 {
-                @extend %section_car;
+            .section_car1 {
+                padding: 0;
+                text-align: center;
+                font-size: x-large;
+                color: map-get($paleta-colores, "blanco" );
+                height: 402px;
                 margin-left: 4.9%;
 
                 @include mb() {
@@ -100,13 +104,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                         text-decoration: none;
 
                         @include mb() {
@@ -120,7 +124,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                         text-align: center;
 
                         @include mb() {
@@ -213,8 +217,12 @@ main {
                 }
             }
 
-            #section_car2 {
-                @extend %section_car;
+            .section_car2 {
+                padding: 0;
+                text-align: center;
+                font-size: x-large;
+                color: map-get($paleta-colores, "blanco" );
+                height: 402px;
                 margin-left: 1.5%;
 
                 @include mb() {
@@ -247,13 +255,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
 
                         @include mb() {
                             font-size: large;
@@ -270,7 +278,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                         text-align: center;
 
                         @include mb() {
@@ -424,16 +432,16 @@ main {
 
                 .card-body {
                     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
-                    color: white;
+                    color: map-get($paleta-colores, "blanco" );
 
                     a {
                         text-decoration: none;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                     }
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                     }
 
                     h2 {
@@ -456,8 +464,8 @@ main {
         }
 
         .fila_cinco {
-            #section_car5 {
-                @extend %section_car;
+            .section_car5 {
+                //@extend %section_car;
                 margin-left: 4%;
 
                 @include mb() {
@@ -490,13 +498,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
 
                         @include mb() {
                             font-size: large;
@@ -513,7 +521,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                         text-align: center;
 
                         @include mb() {
@@ -552,7 +560,7 @@ main {
     
                         a {
                             text-decoration: none;
-                            color: map-get($paleta-colores"blanco");
+                            color: map-get($paleta-colores, "blanco" );
                             font-weight: 20px;
                             margin-left: 3%;
     
@@ -669,7 +677,7 @@ main {
     
                         a {
                             text-decoration: none;
-                            color: map-get($paleta-colores"blanco");
+                            color: map-get($paleta-colores, "blanco" );
                             font-weight: 20px;
                             margin-left: 3%;
     
@@ -688,8 +696,8 @@ main {
                 }
             }
 
-            #section_car7 {
-                @extend %section_car;
+            .section_car7 {
+                //@extend %section_car;
                 margin-left: 2.3%;
 
                 @include mb() {
@@ -722,13 +730,13 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
 
                         @include mb() {
                             font-size: large;
@@ -745,7 +753,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores"blanco");
+                        color: map-get($paleta-colores, "blanco" );
                         text-align: center;
 
                         @include mb() {
