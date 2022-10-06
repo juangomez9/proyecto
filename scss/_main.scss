@@ -627,11 +627,22 @@ main {
                     @include mb() {
                         max-width: 100%;
                         height: 276px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
 
-                    @include tb() {}
+                    @include tb() {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
 
-                    @include pc() {}
+                    @include pc() {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
 
                     .ancor5 {
                         margin-right: 0%;
@@ -794,12 +805,22 @@ main {
                     @include mb() {
                         max-width: 100%;
                         height: 276px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
 
                     @include tb() {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
 
-                    @include pc() {}
+                    @include pc() {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
 
                     .ancor7 {
                         margin-right: 0%;
