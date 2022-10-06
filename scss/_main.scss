@@ -26,7 +26,7 @@ main {
         }
 
         h2 {
-            color: map-get($paleta-colores, "blanco" );
+            color: map-get($paleta-colores, "blanco");
         }
     }
 
@@ -37,29 +37,83 @@ main {
                 margin-left: 5%;
                 color: white;
 
+                @include mb() {
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 5%;
+                }
+
                 a {
                     text-decoration: none;
-                    color: map-get($paleta-colores, "blanco" );
+                    color: map-get($paleta-colores, "blanco");
 
                     h3 {
                         font-size: 40px;
                         margin-bottom: 5%;
+
+                        @include mb() {
+                            font-size: large;
+                        }
+
+                        @include tb() {
+                            font-size: 30px;
+                        }
+
+                        @include pc() {
+                            font-size: 30px;
+                        }
                     }
 
                     h3:hover {
                         text-decoration: underline;
                     }
-
                 }
 
+                p {
+                    @include mb() {
+                        font-size: small;
+                    }
+
+                    @include tb() {}
+
+                    @include pc() {}
+                }
             }
 
             .imagen_inicio {
                 width: 56%;
                 padding: 0;
 
-                .imagen_inicio img {
+                @include mb() {
+                    width: 100%;
+                }
+
+                @include tb() {
+                    width: 100%;
+                }
+
+                @include pc() {
+                    width: 60%;
+                }
+
+                img {
                     max-width: 100%;
+
+                    @include mb() {
+                        max-width: 100%;
+                    }
+
+                    @include tb() {
+                        max-width: 100%;
+                    }
+
+                    @include pc() {
+                        max-width: 100%;
+                    }
                 }
             }
         }
@@ -69,14 +123,14 @@ main {
                 padding: 0;
                 text-align: center;
                 font-size: x-large;
-                color: map-get($paleta-colores, "blanco" );
+                color: map-get($paleta-colores, "blanco");
                 height: 402px;
                 margin-left: 4.9%;
 
                 @include mb() {
                     max-width: 91%;
                     height: 273px;
-                    margin-left: 5;
+                    margin-left: 5%;
                     margin-bottom: 6%;
                 }
 
@@ -89,6 +143,7 @@ main {
 
                 @include pc() {
                     height: 310px;
+                    margin-left: 5%;
                 }
 
                 .card-link {
@@ -104,27 +159,31 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                         text-decoration: none;
 
                         @include mb() {
-                            font-size: large;
+                            font-size: small;
                         }
 
                         @include tb() {
-                            font-size: medium;
+                            font-size: small;
+                        }
+
+                        @include pc() {
+                            font-size: large;
                         }
                     }
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                         text-align: center;
 
                         @include mb() {
@@ -136,7 +195,7 @@ main {
                         }
 
                         @include pc() {
-                            font-size: smaller;
+                            font-size: small;
                         }
                     }
                 }
@@ -149,10 +208,11 @@ main {
 
                 @include mb() {
                     width: 100%;
+                    margin: 0;
                 }
 
                 @include tb() {
-                    width: 69%;
+                    width: 68%;
                 }
 
                 @include pc() {
@@ -221,7 +281,7 @@ main {
                 padding: 0;
                 text-align: center;
                 font-size: x-large;
-                color: map-get($paleta-colores, "blanco" );
+                color: map-get($paleta-colores, "blanco");
                 height: 402px;
                 margin-left: 1.5%;
 
@@ -240,6 +300,7 @@ main {
 
                 @include pc() {
                     height: 310px;
+                    margin-left: 1%;
                 }
 
                 .card-link {
@@ -255,30 +316,30 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
 
                         @include mb() {
-                            font-size: large;
+                            font-size: small;
                         }
 
                         @include tb() {
-                            font-size: large;
+                            font-size: small;
                         }
 
                         @include pc() {
-                            font-size: medium;
+                            font-size: large;
                         }
                     }
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                         text-align: center;
 
                         @include mb() {
@@ -432,16 +493,16 @@ main {
 
                 .card-body {
                     background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
-                    color: map-get($paleta-colores, "blanco" );
+                    color: map-get($paleta-colores, "blanco");
 
                     a {
                         text-decoration: none;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                     }
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                     }
 
                     h2 {
@@ -465,19 +526,19 @@ main {
 
         .fila_cinco {
             .section_car5 {
-                //@extend %section_car;
                 margin-left: 4%;
 
                 @include mb() {
                     height: 276px;
-                    max-width: 91%;
-                    margin-left: 5%;
-                    margin-bottom: 1%;
+                    max-width: 100%;
+                    margin-left: 0%;
+                    margin-bottom: 8%;
                 }
 
                 @include tb() {
                     height: 269px;
                     padding: 0;
+                    margin-left: 0%;
                     width: 29%;
                 }
 
@@ -498,20 +559,20 @@ main {
 
                     a:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
 
                         @include mb() {
-                            font-size: large;
+                            font-size: medium;
                         }
 
                         @include tb() {
-                            font-size: large;
+                            font-size: 15px;
                         }
 
                         @include pc() {
@@ -521,7 +582,7 @@ main {
 
                     p {
                         font-size: large;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                         text-align: center;
 
                         @include mb() {
@@ -543,38 +604,86 @@ main {
                 width: 56.5%;
                 margin-left: 2.3%;
 
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                @include tb() {
+                    width: 68.7%;
+                }
+
+                @include pc() {
+                    width: 59%;
+                }
+
                 .imagen_cinco {
                     background: url(../assets/galeria/gonzales-ruiz-amsterdam.jpg);
                     height: 100%;
                     width: 100%;
                     display: flex;
                     align-items: flex-end;
-    
+
+                    @include mb() {
+                        max-width: 100%;
+                        height: 276px;
+                    }
+
+                    @include tb() {}
+
+                    @include pc() {}
+
                     .ancor5 {
                         margin-right: 0%;
                         height: 45%;
-                        background: linear-gradient(0deg, rgba(39,27,69,1) 0%, rgba(39,27,69,0.927608543417367) 30%, rgba(39,27,69,0.908000700280112) 70%, rgba(68,51,93,0) 100%);                        padding-left: 4%;
+                        background: linear-gradient(0deg, rgba(39, 27, 69, 1) 0%, rgba(39, 27, 69, 0.927608543417367) 30%, rgba(39, 27, 69, 0.908000700280112) 70%, rgba(68, 51, 93, 0) 100%);
+                        padding-left: 4%;
                         padding-top: 9%;
                         display: flex;
                         padding-left: 1%;
-    
+
+                        @include mb() {
+                            max-width: 100%;
+                            height: 30%;
+                        }
+
+                        @include tb() {}
+
+                        @include pc() {}
+
                         a {
                             text-decoration: none;
-                            color: map-get($paleta-colores, "blanco" );
+                            color: map-get($paleta-colores, "blanco");
                             font-weight: 20px;
                             margin-left: 3%;
-    
+
                         }
-    
+
                         a:hover {
                             text-decoration: underline;
                         }
 
                         a img {
                             width: 70px;
+
+                            @include mb() {
+                                max-width: 100%;
+                            }
+
+                            @include tb() {}
+
+                            @include pc() {}
                         }
-    
-                        a h2 {}
+
+                        h2 {
+                            @include mb() {
+                                font-size: medium;
+                            }
+
+                            @include tb() {}
+
+                            @include pc() {}
+                        }
                     }
                 }
             }
@@ -587,7 +696,7 @@ main {
 
                 @include mb() {
                     width: 100%;
-                    margin-bottom: 5%;
+                    margin-bottom: 6%;
                     margin-left: 0;
                 }
 
@@ -656,9 +765,24 @@ main {
         }
 
         .fila_siete {
-            .con_imagen{
+            .con_imagen_7 {
                 width: 56.5%;
                 margin-left: 4%;
+
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 8%;
+                }
+
+                @include tb() {
+                    width: 68.7%; 
+                    margin-left: 0;
+                }
+
+                @include pc() {
+                    width: 59%;
+                }
 
                 .imagen_siete {
                     background: url(../assets/galeria/arianasanches-josemaria-amsterdam.jpg);
@@ -667,106 +791,142 @@ main {
                     display: flex;
                     align-items: flex-end;
 
+                    @include mb() {
+                        max-width: 100%;
+                        height: 276px;
+                    }
+
+                    @include tb() {
+                    }
+
+                    @include pc() {}
+
                     .ancor7 {
                         margin-right: 0%;
                         height: 45%;
-                        background: linear-gradient(0deg, rgba(39,27,69,1) 0%, rgba(39,27,69,0.927608543417367) 30%, rgba(39,27,69,0.908000700280112) 70%, rgba(68,51,93,0) 100%);                        padding-left: 4%;
+                        background: linear-gradient(0deg, rgba(39, 27, 69, 1) 0%, rgba(39, 27, 69, 0.927608543417367) 30%, rgba(39, 27, 69, 0.908000700280112) 70%, rgba(68, 51, 93, 0) 100%);
+                        padding-left: 4%;
                         padding-top: 9%;
                         display: flex;
                         padding-left: 1%;
-    
+
+                        @include mb() {
+                            max-width: 100%;
+                            height: 30%;
+                        }
+
+                        @include tb() {}
+
+                        @include pc() {}
+
                         a {
                             text-decoration: none;
-                            color: map-get($paleta-colores, "blanco" );
+                            color: map-get($paleta-colores, "blanco");
                             font-weight: 20px;
                             margin-left: 3%;
-    
+
                         }
-    
+
                         a:hover {
                             text-decoration: underline;
                         }
 
                         a img {
                             width: 70px;
+
+                            @include mb() {
+                                max-width: 100%;
+                            }
+
+                            @include tb() {}
+
+                            @include pc() {}
                         }
-    
-                        a h2 {}
+                    }
+
+                    h2 {
+                        @include mb() {
+                            font-size: medium;
+                        }
+
+                        @include tb() {}
+
+                        @include pc() {}
                     }
                 }
             }
+        }
 
-            .section_car7 {
-                //@extend %section_car;
-                margin-left: 2.3%;
+        .section_car7 {
+            margin-left: 2.3%;
 
-                @include mb() {
-                    height: 276px;
-                    max-width: 91%;
-                    margin-left: 5%;
-                    margin-bottom: 1%;
-                }
+            @include mb() {
+                height: 276px;
+                max-width: 100%;
+                margin-left: 0%;
+                margin-bottom: 8%;
+            }
 
-                @include tb() {
-                    height: 269px;
-                    padding: 0;
-                    width: 29%;
-                }
+            @include tb() {
+                height: 269px;
+                padding: 0;
+                width: 29%;
+            }
 
-                @include pc() {
-                    height: 310px;
-                }
+            @include pc() {
+                height: 310px;
+            }
 
-                .card-link {
-                    margin: 0;
-                }
+            .card-link {
+                margin: 0;
+            }
 
-                .card-body {
-                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+            .card-body {
+                background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
 
-                    a {
-                        text-decoration: none;
-                    }
+                a {
+                    text-decoration: none;
 
-                    a:hover {
+                    &:hover {
                         text-decoration: underline;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
                     }
 
                     h5 {
                         font-size: x-large;
                         text-align: center;
-                        color: map-get($paleta-colores, "blanco" );
+                        color: map-get($paleta-colores, "blanco");
 
                         @include mb() {
-                            font-size: large;
+                            font-size: small;
                         }
 
                         @include tb() {
-                            font-size: large;
+                            font-size: medium;
                         }
 
                         @include pc() {
                             font-size: medium;
                         }
+
+                    }
+                }
+
+                p {
+                    font-size: large;
+                    color: map-get($paleta-colores, "blanco");
+                    text-align: center;
+
+                    @include mb() {
+                        font-size: 12px;
                     }
 
-                    p {
-                        font-size: large;
-                        color: map-get($paleta-colores, "blanco" );
-                        text-align: center;
+                    @include tb() {
+                        font-size: 12px;
+                    }
 
-                        @include mb() {
-                            font-size: small;
-                        }
-
-                        @include tb() {
-                            font-size: small;
-                        }
-
-                        @include pc() {
-                            font-size: small;
-                        }
+                    @include pc() {
+                        font-size: small;
                     }
                 }
             }

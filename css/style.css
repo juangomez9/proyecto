@@ -43,19 +43,57 @@ main {
     background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%);
     margin-left: 5%;
     color: white; }
+    @media screen and (max-width: 320px) {
+      main .container .fila_inicial .card_inicio {
+        margin-left: 0; } }
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      main .container .fila_inicial .card_inicio {
+        width: 100%;
+        margin: 0;
+        margin-top: 5%; } }
     main .container .fila_inicial .card_inicio a {
       text-decoration: none;
       color: white; }
       main .container .fila_inicial .card_inicio a h3 {
         font-size: 40px;
         margin-bottom: 5%; }
+        @media screen and (max-width: 320px) {
+          main .container .fila_inicial .card_inicio a h3 {
+            font-size: large; } }
+        @media screen and (min-width: 321px) and (max-width: 768px) {
+          main .container .fila_inicial .card_inicio a h3 {
+            font-size: 30px; } }
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          main .container .fila_inicial .card_inicio a h3 {
+            font-size: 30px; } }
       main .container .fila_inicial .card_inicio a h3:hover {
         text-decoration: underline; }
+    @media screen and (max-width: 320px) {
+      main .container .fila_inicial .card_inicio p {
+        font-size: small; } }
   main .container .fila_inicial .imagen_inicio {
     width: 56%;
     padding: 0; }
-    main .container .fila_inicial .imagen_inicio .imagen_inicio img {
+    @media screen and (max-width: 320px) {
+      main .container .fila_inicial .imagen_inicio {
+        width: 100%; } }
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      main .container .fila_inicial .imagen_inicio {
+        width: 100%; } }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      main .container .fila_inicial .imagen_inicio {
+        width: 60%; } }
+    main .container .fila_inicial .imagen_inicio img {
       max-width: 100%; }
+      @media screen and (max-width: 320px) {
+        main .container .fila_inicial .imagen_inicio img {
+          max-width: 100%; } }
+      @media screen and (min-width: 321px) and (max-width: 768px) {
+        main .container .fila_inicial .imagen_inicio img {
+          max-width: 100%; } }
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        main .container .fila_inicial .imagen_inicio img {
+          max-width: 100%; } }
   main .container .fila_uno .section_car1 {
     padding: 0;
     text-align: center;
@@ -67,7 +105,7 @@ main {
       main .container .fila_uno .section_car1 {
         max-width: 91%;
         height: 273px;
-        margin-left: 5;
+        margin-left: 5%;
         margin-bottom: 6%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
       main .container .fila_uno .section_car1 {
@@ -77,7 +115,8 @@ main {
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       main .container .fila_uno .section_car1 {
-        height: 310px; } }
+        height: 310px;
+        margin-left: 5%; } }
     main .container .fila_uno .section_car1 .card-link {
       margin: 0 !important; }
     main .container .fila_uno .section_car1 .card-body {
@@ -94,10 +133,13 @@ main {
         text-decoration: none; }
         @media screen and (max-width: 320px) {
           main .container .fila_uno .section_car1 .card-body h5 {
-            font-size: large; } }
+            font-size: small; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
           main .container .fila_uno .section_car1 .card-body h5 {
-            font-size: medium; } }
+            font-size: small; } }
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          main .container .fila_uno .section_car1 .card-body h5 {
+            font-size: large; } }
       main .container .fila_uno .section_car1 .card-body p {
         font-size: large;
         color: white;
@@ -110,16 +152,17 @@ main {
             font-size: small; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
           main .container .fila_uno .section_car1 .card-body p {
-            font-size: smaller; } }
+            font-size: small; } }
   main .container .fila_uno #video_sec1 {
     margin-left: 1.5%;
     width: 56.1%; }
     @media screen and (max-width: 320px) {
       main .container .fila_uno #video_sec1 {
-        width: 100%; } }
+        width: 100%;
+        margin: 0; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
       main .container .fila_uno #video_sec1 {
-        width: 69%; } }
+        width: 68%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       main .container .fila_uno #video_sec1 {
         width: 60%; } }
@@ -180,7 +223,8 @@ main {
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       main .container .fila_dos .section_car2 {
-        height: 310px; } }
+        height: 310px;
+        margin-left: 1%; } }
     main .container .fila_dos .section_car2 .card-link {
       margin: 0; }
     main .container .fila_dos .section_car2 .card-body {
@@ -196,13 +240,13 @@ main {
         color: white; }
         @media screen and (max-width: 320px) {
           main .container .fila_dos .section_car2 .card-body h5 {
-            font-size: large; } }
+            font-size: small; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
           main .container .fila_dos .section_car2 .card-body h5 {
-            font-size: large; } }
+            font-size: small; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
           main .container .fila_dos .section_car2 .card-body h5 {
-            font-size: medium; } }
+            font-size: large; } }
       main .container .fila_dos .section_car2 .card-body p {
         font-size: large;
         color: white;
@@ -335,13 +379,14 @@ main {
     @media screen and (max-width: 320px) {
       main .container .fila_cinco .section_car5 {
         height: 276px;
-        max-width: 91%;
-        margin-left: 5%;
-        margin-bottom: 1%; } }
+        max-width: 100%;
+        margin-left: 0%;
+        margin-bottom: 8%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
       main .container .fila_cinco .section_car5 {
         height: 269px;
         padding: 0;
+        margin-left: 0%;
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       main .container .fila_cinco .section_car5 {
@@ -361,10 +406,10 @@ main {
         color: white; }
         @media screen and (max-width: 320px) {
           main .container .fila_cinco .section_car5 .card-body h5 {
-            font-size: large; } }
+            font-size: medium; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
           main .container .fila_cinco .section_car5 .card-body h5 {
-            font-size: large; } }
+            font-size: 15px; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
           main .container .fila_cinco .section_car5 .card-body h5 {
             font-size: medium; } }
@@ -384,12 +429,26 @@ main {
   main .container .fila_cinco .con_imagen {
     width: 56.5%;
     margin-left: 2.3%; }
+    @media screen and (max-width: 320px) {
+      main .container .fila_cinco .con_imagen {
+        width: 100%;
+        margin-left: 0; } }
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      main .container .fila_cinco .con_imagen {
+        width: 68.7%; } }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      main .container .fila_cinco .con_imagen {
+        width: 59%; } }
     main .container .fila_cinco .con_imagen .imagen_cinco {
       background: url(../assets/galeria/gonzales-ruiz-amsterdam.jpg);
       height: 100%;
       width: 100%;
       display: flex;
       align-items: flex-end; }
+      @media screen and (max-width: 320px) {
+        main .container .fila_cinco .con_imagen .imagen_cinco {
+          max-width: 100%;
+          height: 276px; } }
       main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 {
         margin-right: 0%;
         height: 45%;
@@ -398,6 +457,10 @@ main {
         padding-top: 9%;
         display: flex;
         padding-left: 1%; }
+        @media screen and (max-width: 320px) {
+          main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 {
+            max-width: 100%;
+            height: 30%; } }
         main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 a {
           text-decoration: none;
           color: white;
@@ -407,13 +470,19 @@ main {
           text-decoration: underline; }
         main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 a img {
           width: 70px; }
+          @media screen and (max-width: 320px) {
+            main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 a img {
+              max-width: 100%; } }
+        @media screen and (max-width: 320px) {
+          main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 h2, main .container .fila_cinco .con_imagen .imagen_cinco .ancor5 section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .card-body .container .fila_cinco .con_imagen .imagen_cinco .ancor5 p {
+            font-size: medium; } }
   main .container .fila_seis #video_sec6 {
     width: 44.8%;
     margin-left: 4%; }
     @media screen and (max-width: 320px) {
       main .container .fila_seis #video_sec6 {
         width: 100%;
-        margin-bottom: 5%;
+        margin-bottom: 6%;
         margin-left: 0; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
       main .container .fila_seis #video_sec6 {
@@ -460,16 +529,32 @@ main {
       @media screen and (min-width: 769px) and (max-width: 1024px) {
         main .container .fila_seis #video_sec6_2 video {
           max-width: 100%; } }
-  main .container .fila_siete .con_imagen {
+  main .container .fila_siete .con_imagen_7 {
     width: 56.5%;
     margin-left: 4%; }
-    main .container .fila_siete .con_imagen .imagen_siete {
+    @media screen and (max-width: 320px) {
+      main .container .fila_siete .con_imagen_7 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 8%; } }
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      main .container .fila_siete .con_imagen_7 {
+        width: 68.7%;
+        margin-left: 0; } }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      main .container .fila_siete .con_imagen_7 {
+        width: 59%; } }
+    main .container .fila_siete .con_imagen_7 .imagen_siete {
       background: url(../assets/galeria/arianasanches-josemaria-amsterdam.jpg);
       height: 100%;
       width: 100%;
       display: flex;
       align-items: flex-end; }
-      main .container .fila_siete .con_imagen .imagen_siete .ancor7 {
+      @media screen and (max-width: 320px) {
+        main .container .fila_siete .con_imagen_7 .imagen_siete {
+          max-width: 100%;
+          height: 276px; } }
+      main .container .fila_siete .con_imagen_7 .imagen_siete .ancor7 {
         margin-right: 0%;
         height: 45%;
         background: linear-gradient(0deg, #271b45 0%, rgba(39, 27, 69, 0.927609) 30%, rgba(39, 27, 69, 0.908001) 70%, rgba(68, 51, 93, 0) 100%);
@@ -477,65 +562,75 @@ main {
         padding-top: 9%;
         display: flex;
         padding-left: 1%; }
-        main .container .fila_siete .con_imagen .imagen_siete .ancor7 a {
+        @media screen and (max-width: 320px) {
+          main .container .fila_siete .con_imagen_7 .imagen_siete .ancor7 {
+            max-width: 100%;
+            height: 30%; } }
+        main .container .fila_siete .con_imagen_7 .imagen_siete .ancor7 a {
           text-decoration: none;
           color: white;
           font-weight: 20px;
           margin-left: 3%; }
-        main .container .fila_siete .con_imagen .imagen_siete .ancor7 a:hover {
+        main .container .fila_siete .con_imagen_7 .imagen_siete .ancor7 a:hover {
           text-decoration: underline; }
-        main .container .fila_siete .con_imagen .imagen_siete .ancor7 a img {
+        main .container .fila_siete .con_imagen_7 .imagen_siete .ancor7 a img {
           width: 70px; }
-  main .container .fila_siete .section_car7 {
+          @media screen and (max-width: 320px) {
+            main .container .fila_siete .con_imagen_7 .imagen_siete .ancor7 a img {
+              max-width: 100%; } }
+      @media screen and (max-width: 320px) {
+        main .container .fila_siete .con_imagen_7 .imagen_siete h2, main .container .fila_siete .con_imagen_7 .imagen_siete section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .card-body .container .fila_siete .con_imagen_7 .imagen_siete p {
+          font-size: medium; } }
+  main .container .section_car7 {
     margin-left: 2.3%; }
     @media screen and (max-width: 320px) {
-      main .container .fila_siete .section_car7 {
+      main .container .section_car7 {
         height: 276px;
-        max-width: 91%;
-        margin-left: 5%;
-        margin-bottom: 1%; } }
+        max-width: 100%;
+        margin-left: 0%;
+        margin-bottom: 8%; } }
     @media screen and (min-width: 321px) and (max-width: 768px) {
-      main .container .fila_siete .section_car7 {
+      main .container .section_car7 {
         height: 269px;
         padding: 0;
         width: 29%; } }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      main .container .fila_siete .section_car7 {
+      main .container .section_car7 {
         height: 310px; } }
-    main .container .fila_siete .section_car7 .card-link {
+    main .container .section_car7 .card-link {
       margin: 0; }
-    main .container .fila_siete .section_car7 .card-body {
+    main .container .section_car7 .card-body {
       background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
-      main .container .fila_siete .section_car7 .card-body a {
+      main .container .section_car7 .card-body a {
         text-decoration: none; }
-      main .container .fila_siete .section_car7 .card-body a:hover {
-        text-decoration: underline;
-        color: white; }
-      main .container .fila_siete .section_car7 .card-body h5 {
-        font-size: x-large;
-        text-align: center;
-        color: white; }
-        @media screen and (max-width: 320px) {
-          main .container .fila_siete .section_car7 .card-body h5 {
-            font-size: large; } }
-        @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_siete .section_car7 .card-body h5 {
-            font-size: large; } }
-        @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_siete .section_car7 .card-body h5 {
-            font-size: medium; } }
-      main .container .fila_siete .section_car7 .card-body p {
+        main .container .section_car7 .card-body a:hover {
+          text-decoration: underline;
+          color: white; }
+        main .container .section_car7 .card-body a h5 {
+          font-size: x-large;
+          text-align: center;
+          color: white; }
+          @media screen and (max-width: 320px) {
+            main .container .section_car7 .card-body a h5 {
+              font-size: small; } }
+          @media screen and (min-width: 321px) and (max-width: 768px) {
+            main .container .section_car7 .card-body a h5 {
+              font-size: medium; } }
+          @media screen and (min-width: 769px) and (max-width: 1024px) {
+            main .container .section_car7 .card-body a h5 {
+              font-size: medium; } }
+      main .container .section_car7 .card-body p {
         font-size: large;
         color: white;
         text-align: center; }
         @media screen and (max-width: 320px) {
-          main .container .fila_siete .section_car7 .card-body p {
-            font-size: small; } }
+          main .container .section_car7 .card-body p {
+            font-size: 12px; } }
         @media screen and (min-width: 321px) and (max-width: 768px) {
-          main .container .fila_siete .section_car7 .card-body p {
-            font-size: small; } }
+          main .container .section_car7 .card-body p {
+            font-size: 12px; } }
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          main .container .fila_siete .section_car7 .card-body p {
+          main .container .section_car7 .card-body p {
             font-size: small; } }
 
 main .row .img_sep, main .row h2, main section .row .card_rank .card .row .card_text .card-body p {
@@ -549,6 +644,31 @@ main section .row .card_rank .card {
   background: linear-gradient(90deg, #4f5458 10%, #5f656c 30%, #5f656c 70%, #4f5458 90%); }
   main section .row .card_rank .card .row .card_text .card-body h2, main section .row .card_rank .card .row .card_text .card-body p {
     color: white; }
+
+main .filaseparador {
+  max-width: 90%; }
+
+main section .row .video_uno video {
+  max-width: 100%; }
+
+main section .row .video_dos video {
+  max-width: 100%; }
+
+main section .row .video_tres video {
+  max-width: 100%;
+  margin-bottom: 2%; }
+
+main section .row .video_tres video {
+  max-width: 100%; }
+
+main section .row .video_cuatro video {
+  max-width: 100%; }
+
+main section .row .video_seis video {
+  max-width: 100%; }
+
+main section .row .video_siete video {
+  max-width: 100%; }
 
 footer .fila_footer {
   background: linear-gradient(90deg, #212529 10%, #484d52 30%, #484d52 70%, #212529 90%); }
