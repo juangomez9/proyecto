@@ -1,9 +1,111 @@
 footer {
-    .fila_footer{
-    background: linear-gradient(90deg, rgba(33, 37, 41, 1) 10%, rgba(72, 77, 82, 1) 30%, rgba(72, 77, 82, 1) 70%, rgba(33, 37, 41, 1) 90%);
-        
-        p{
-            color: white;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(55, 62, 66, 1) 30%, rgba(65, 69, 73, 1) 70%, rgba(0, 0, 0, 1) 100%);
+
+        .fila_uno_footer {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            margin-left: 20%;
+            margin-bottom: 4%;
+
+            .fila_sep {
+                margin-bottom: 3%;
+
+                .imgsep {
+                    height: 4px;
+                }
+    
+                h5 {
+                    color: white;
+                }
+            }
+
+            #img_merc {
+                width: 200px;
+            }
+        }
+
+        .fila_dos_footer {
+            width: 60%;
+            display: flex;
+            margin-left: 20%;
+            margin-bottom: 5%;
+
+            .fila_sep {
+                margin-bottom: 5%;
+
+                .imgsep {
+                    height: 4px;
+                    width: 25%;
+                }
+
+                h5 {
+                    color: white;
+                }
+            }
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .fila_tres_footer {
+            width: 60%;
+            display: flex;
+            margin-left: 20%;
+
+            .fila_sep {
+                margin-bottom: 5%;
+
+                .imgsep {
+                    height: 4px;
+                    width: 25%;
+                }
+
+                h5 {
+                    color: white;
+                }
+            }
+
+            img{
+                width: 200px;
+            }
+
+            #urich {
+                width: 150px;
+            }
+
+            #babolat {
+                width: 310px;
+            }      
+        }
+
+    .fila_nav {
+        nav {
+            padding: 0;
+            .container-fluid {
+                a {
+                    text-decoration: none;
+                    font-family: Sport2;
+                    font-size: x-large;
+                    margin: 2%;
+                    color: white;
+                    padding: 0;
+                }
+
+                .navbar-toggler {
+                    border: 1px solid white;
+                }
+
+                .container-fluid {
+                    .barranav {
+                        .nav-item {
+                            margin: 2%;
+                        }
+                    }
+                }
+            }
         }
     }
+
 }
