@@ -534,9 +534,15 @@ main {
                 width: 46%;
                 margin-left: 4%;
 
-                @include mb(){width: 100%; margin: 0; margin-bottom: 5%;}
-                @include mb(){}
-                @include mb(){}
+                @include mb() {
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 5%;
+                }
+
+                @include mb() {}
+
+                @include mb() {}
 
                 video {
                     max-width: 100%;
@@ -546,10 +552,15 @@ main {
             .video_final_2 {
                 width: 46%;
                 margin-left: 0.5%;
-                
-                @include mb(){width: 100%; margin: 0;}
-                @include tb(){}
-                @include pc(){}
+
+                @include mb() {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                @include tb() {}
+
+                @include pc() {}
 
                 video {
                     max-width: 100%;
@@ -560,7 +571,9 @@ main {
 
         .fila_semifinal {
 
-            @include tb(){margin-bottom: 10%;}
+            @include tb() {
+                margin-bottom: 10%;
+            }
 
             .video_semi {
                 width: 58.3%;
@@ -585,17 +598,30 @@ main {
 
             .noticias_semi {
 
-                @include tb(){display:flex;}
+                @include tb() {
+                    display: flex;
+                }
 
                 .con_imagen_semi {
                     margin-left: 2.3%;
                     width: 100%;
                     height: 50%;
                     margin-bottom: 3%;
-                    
-                    @include mb(){margin: 0; height: 276px; margin-bottom: 5%; margin-top: 5%;}
-                    @include tb(){height: 100%; width: 49%; margin-left: 0;}
-                    @include pc(){}
+
+                    @include mb() {
+                        margin: 0;
+                        height: 276px;
+                        margin-bottom: 5%;
+                        margin-top: 5%;
+                    }
+
+                    @include tb() {
+                        height: 100%;
+                        width: 49%;
+                        margin-left: 0;
+                    }
+
+                    @include pc() {}
 
                     .imagen_semi {
                         background: url(../assets/galeria/lima-stupa-semifinal.jpg);
@@ -616,9 +642,16 @@ main {
                             display: flex;
                             padding-left: 1%;
 
-                            @include mb(){padding-top: 10%; height: 30%;}
-                            @include tb(){padding-top: 10%;}
-                            @include pc(){}
+                            @include mb() {
+                                padding-top: 10%;
+                                height: 30%;
+                            }
+
+                            @include tb() {
+                                padding-top: 10%;
+                            }
+
+                            @include pc() {}
 
                             a {
                                 text-decoration: none;
@@ -655,9 +688,19 @@ main {
                     width: 100%;
                     height: 50%;
 
-                    @include mb(){height: 276px; margin: 0;}
-                    @include tb(){height: 300px; width: 49%; margin-left: 2%; margin-right: 1%;}
-                    @include pc(){}
+                    @include mb() {
+                        height: 276px;
+                        margin: 0;
+                    }
+
+                    @include tb() {
+                        height: 300px;
+                        width: 49%;
+                        margin-left: 2%;
+                        margin-right: 1%;
+                    }
+
+                    @include pc() {}
 
                     .imagen_semi_2 {
                         background: url(../assets/galeria/ortega-bea-semifinal.jpg);
@@ -704,7 +747,9 @@ main {
                                 padding-top: 10%;
                             }
 
-                            @include tb() { padding-top: 10%;}
+                            @include tb() {
+                                padding-top: 10%;
+                            }
 
                             @include pc() {}
 
@@ -1247,4 +1292,150 @@ main {
             }
         }
     }
+}
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+
+    .container {
+        .fila_uno {
+            .section_car1 {
+                width: 100%;
+                margin-bottom: 7%;
+
+                @include tb() {
+                    height: 330px !important;
+                    margin-left: 0% !important;
+                    width: 100% !important;
+                }
+            }
+
+            #video_sec1 {
+                margin-left: 0 !important;
+                width: 100% !important;
+
+                @include tb() {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .fila_dos {
+            .section_car2 {
+
+                @include tb() {
+                    height: 330px !important;
+                    margin-left: 0% !important;
+                    width: 100% !important;
+                }
+            }
+
+            #video_sec2 {
+                margin-left: 0 !important;
+                width: 100% !important;
+                margin-bottom: 5%;
+
+                @include tb() {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .fila_tres {
+            #video_sec3 {
+                width: 100% !important;
+                margin-bottom: 5%;
+
+            }
+
+            #video_sec3_2 {
+                width: 100% !important;
+                margin-left: 0% !important;
+            }
+        }
+
+        .fila_cuatro {
+            #card_sec4 {
+                height: 20px !important;
+
+                h2 {
+                    font-size: 12.3px !important;
+                }
+            }
+        }
+
+        .fila_final {
+            .video_final {
+                width: 100% !important;
+                margin-left: 0% !important;
+                margin-bottom: 5%;
+            }
+
+            .video_final_2 {
+                width: 100% !important;
+                margin-left: 0% !important;
+            }
+        }
+
+        .fila_cinco {
+            .section_car5 {
+                margin-bottom: 7%;
+
+                @include tb() {
+                    height: 330px !important;
+                    width: 100% !important;
+                }
+
+            }
+
+            .con_imagen {
+                width: 100% !important;
+                height: 276px !important;
+                margin: 0% !important;
+            }
+        }
+
+        .fila_seis {
+            #video_sec6 {
+                width: 100% !important;
+                margin-bottom: 5%;
+
+            }
+
+            #video_sec6_2 {
+                width: 100% !important;
+                margin-left: 0% !important;
+            }
+        }
+
+        .fila_siete {
+            .section_car7 {
+                margin-left: 0% !important;
+
+                @include tb() {
+                    height: 335px !important;
+                    width: 100% !important;
+                }
+            }
+
+            .con_imagen_7 {
+                width: 100% !important;
+                height: 276px !important;
+                margin: 0% !important;
+                margin-bottom: 7% !important;
+            }
+        }
+
+        .fila_ocho {
+            .con_imagen_separacion {
+                height: 276px !important;
+            }
+
+            .ancor_separacion {
+                h2 {
+                    font-size: large !important;
+                }
+            }
+        }
+    }
+
 }

@@ -37,6 +37,18 @@ header {
     header .fila_nav nav .container-fluid .container-fluid .barranav .nav-item {
       margin: 2%; }
 
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .fila_header .redes .container .row a {
+    margin: 0% !important; } }
+  @media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+    .fila_header .redes .container .row a {
+      margin: 4%; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+    .fila_header .redes .container .row a img {
+      width: 1px !important;
+      visibility: hidden; } }
+
 main {
   background: linear-gradient(90deg, #212529 10%, #484d52 30%, #484d52 70%, #212529 90%); }
   main .fila_separador .imgsep {
@@ -903,6 +915,93 @@ main {
             main .container .fila_ocho .con_imagen_separacion .imagen_separacion .ancor_separacion h2, main .container .fila_ocho .con_imagen_separacion .imagen_separacion .ancor_separacion section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .card-body .container .fila_ocho .con_imagen_separacion .imagen_separacion .ancor_separacion p {
               font-size: small; } }
 
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .container .fila_uno .section_car1 {
+    width: 100%;
+    margin-bottom: 7%; } }
+  @media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+    .container .fila_uno .section_car1 {
+      height: 330px !important;
+      margin-left: 0% !important;
+      width: 100% !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .container .fila_uno #video_sec1 {
+    margin-left: 0 !important;
+    width: 100% !important; } }
+  @media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+    .container .fila_uno #video_sec1 {
+      width: 100% !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+  .container .fila_dos .section_car2 {
+    height: 330px !important;
+    margin-left: 0% !important;
+    width: 100% !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .container .fila_dos #video_sec2 {
+    margin-left: 0 !important;
+    width: 100% !important;
+    margin-bottom: 5%; } }
+  @media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+    .container .fila_dos #video_sec2 {
+      width: 100% !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .container .fila_tres #video_sec3 {
+    width: 100% !important;
+    margin-bottom: 5%; }
+  .container .fila_tres #video_sec3_2 {
+    width: 100% !important;
+    margin-left: 0% !important; }
+  .container .fila_cuatro #card_sec4 {
+    height: 20px !important; }
+    .container .fila_cuatro #card_sec4 h2, .container .fila_cuatro #card_sec4 main section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .card-body .container .fila_cuatro #card_sec4 p {
+      font-size: 12.3px !important; }
+  .container .fila_final .video_final {
+    width: 100% !important;
+    margin-left: 0% !important;
+    margin-bottom: 5%; }
+  .container .fila_final .video_final_2 {
+    width: 100% !important;
+    margin-left: 0% !important; }
+  .container .fila_cinco .section_car5 {
+    margin-bottom: 7%; } }
+  @media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+    .container .fila_cinco .section_car5 {
+      height: 330px !important;
+      width: 100% !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .container .fila_cinco .con_imagen {
+    width: 100% !important;
+    height: 276px !important;
+    margin: 0% !important; }
+  .container .fila_seis #video_sec6 {
+    width: 100% !important;
+    margin-bottom: 5%; }
+  .container .fila_seis #video_sec6_2 {
+    width: 100% !important;
+    margin-left: 0% !important; }
+  .container .fila_siete .section_car7 {
+    margin-left: 0% !important; } }
+  @media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+    .container .fila_siete .section_car7 {
+      height: 335px !important;
+      width: 100% !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .container .fila_siete .con_imagen_7 {
+    width: 100% !important;
+    height: 276px !important;
+    margin: 0% !important;
+    margin-bottom: 7% !important; }
+  .container .fila_ocho .con_imagen_separacion {
+    height: 276px !important; }
+  .container .fila_ocho .ancor_separacion h2, .container .fila_ocho .ancor_separacion main section .row .card_rank .card .row .card_text .card-body p, main section .row .card_rank .card .row .card_text .card-body .container .fila_ocho .ancor_separacion p {
+    font-size: large !important; } }
+
 main .row .img_sep, main .row h2, main section .row .card_rank .card .row .card_text .card-body p {
   color: white; }
 
@@ -1085,3 +1184,44 @@ footer {
       border: 1px solid white; }
     footer .fila_nav nav .container-fluid .container-fluid .barranav .nav-item {
       margin: 2%; }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .fila_uno_footer .fila_sep {
+    margin-bottom: 3%; }
+    .fila_uno_footer .fila_sep .imgsep {
+      width: 1% !important; }
+    .fila_uno_footer .fila_sep h5 {
+      font-size: large;
+      width: 100%; }
+  .fila_uno_footer #img_estrella {
+    width: 150px !important; }
+  .fila_dos_footer .fila_sep {
+    margin-bottom: 0% !important; }
+    .fila_dos_footer .fila_sep .imgsep {
+      width: 1% !important;
+      text-align: center !important; }
+    .fila_dos_footer .fila_sep h5 {
+      font-size: large;
+      width: 100%; }
+  .fila_tres_footer .fila_sep {
+    margin-bottom: 5%; }
+    .fila_tres_footer .fila_sep .imgsep {
+      width: 1% !important; }
+    .fila_tres_footer .fila_sep h5 {
+      width: 100%; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+  .fila_tres_footer img {
+    width: 140px !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+  .fila_tres_footer #urich {
+    width: 80px !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+  .fila_tres_footer #babolat {
+    width: 100px !important; } }
+
+@media screen and (min-width: 374px) and (max-width: 426px) and (min-width: 321px) and (max-width: 768px) {
+  .fila_tres_footer #adidas {
+    width: 80px !important; } }

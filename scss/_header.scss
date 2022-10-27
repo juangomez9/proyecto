@@ -80,3 +80,23 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+    .fila_header {
+        .redes {
+            .container {
+                .row {
+                    a {
+                        margin: 0% !important;
+                        @include tb(){margin: 4%;}
+
+                        img {
+                            width: 1px !important;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

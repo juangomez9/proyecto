@@ -172,3 +172,72 @@ footer {
     }
 
 }
+
+@media screen and (min-width: 374px) and (max-width: 426px) {
+    .fila_uno_footer {
+
+        .fila_sep {
+            margin-bottom: 3%;
+
+            .imgsep {
+                width: 1% !important;
+            }
+
+            h5 {
+                font-size: large;
+                width: 100%;
+            }
+        }
+
+        #img_estrella {
+            width: 150px !important;
+        }
+    }
+
+    .fila_dos_footer {
+        .fila_sep {
+            margin-bottom: 0% !important;
+
+            .imgsep {
+                width: 1% !important;
+                text-align: center !important;
+            }
+
+            h5 {
+                font-size: large;
+                width: 100%;
+            }
+        }
+    }
+
+    .fila_tres_footer {
+
+        .fila_sep {
+            margin-bottom: 5%;
+
+            .imgsep {
+                width: 1% !important;
+            }
+
+            h5 {
+                width: 100%;
+            }
+        }
+
+        img {
+            @include tb(){width: 140px !important;}
+        }
+
+        #urich {
+            @include tb(){width: 80px !important;}
+        }
+
+        #babolat {
+            @include tb(){width: 100px !important;}
+        }
+
+        #adidas {
+            @include tb(){width: 80px !important;}
+        }
+    }
+}
