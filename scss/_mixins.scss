@@ -1,14 +1,14 @@
-@mixin mb($medida: 320px) {
-    @media screen and (max-width: $medida) {
+@mixin mb($min: 320px, $max: 768px) {
+    @media screen and (min-width: $min) and (max-width: $max) {
         @content;
     }
 }
 
-@mixin tb($min: 321px, $max: 768px) {
-    @media screen and (min-width: $min) and (max-width: $max) {
-        @content
-    }
-}
+// @mixin tb($min: 321px, $max: 768px) {
+//     @media screen and (min-width: $min) and (max-width: $max) {
+//         @content
+//     }
+// }
 
 @mixin pc($miin: 769px, $maax: 1024px) {
     @media screen and (min-width: $miin) and (max-width: $maax) {

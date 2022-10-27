@@ -139,7 +139,7 @@ main {
                 }
 
                 @include tb() {
-                    height: 269px;
+                    height: 261px;
                     padding: 0;
                     margin-left: 1.5%;
                     width: 29%;
@@ -195,7 +195,7 @@ main {
                         }
 
                         @include tb() {
-                            font-size: small;
+                            font-size: 11px;
                         }
 
                         @include pc() {
@@ -297,7 +297,7 @@ main {
                 }
 
                 @include tb() {
-                    height: 269px;
+                    height: 265px;
                     padding: 0;
                     width: 29%;
                 }
