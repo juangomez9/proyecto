@@ -1,0 +1,39 @@
+main {
+    article {
+        h2 {
+            font-size: 50px;
+            padding: 0 10% 0 10%;
+
+            @include mb(){font-size: large;}
+        }
+
+        h4 {
+            color: white;
+            padding: 0 20% 0 20%;
+            text-align: center;
+
+            @include mb(){font-size: medium; padding: 0;}
+        }
+
+        p {
+            color: white;
+            font-size: x-large;
+            padding: 0 20% 0 20%;
+            margin: 0;
+
+            @include mb(){font-size: small; padding: 0;}
+        }
+
+        video {
+            width: 60%;
+
+            @include mb(){width: 100%;}
+        }
+
+        img {
+            width: 60%;
+
+            @include mb(){width: 100%;}
+        }
+    }
+}

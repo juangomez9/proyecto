@@ -10,11 +10,6 @@ main {
         }
     }
 
-    .container{
-        h3 {
-            color: white;
-        }
-    }
 
     section {
         .row {
@@ -32,6 +27,7 @@ main {
 
                                 p {
                                     @extend h2;
+                                    margin: 0;
                                 }
                             }
                         }

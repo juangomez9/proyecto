@@ -6,41 +6,11 @@ main {
 
     section {
         .row {
-            .video_uno {
+            div {
                 video {
                     max-width: 100%;
                 }
             }
-            .video_dos {
-                video {
-                    max-width: 100%;
-                }
-            }
-            .video_tres {
-                video {
-                    max-width: 100%;
-                    margin-bottom: 2%;
-                }
-                video {
-                    max-width: 100%;
-                }
-            }
-            .video_cuatro {
-                video {
-                    max-width: 100%;
-                }
-            }
-            .video_seis {
-                video {
-                    max-width: 100%;
-                }
-            }
-            .video_siete {
-                video {
-                    max-width: 100%;
-                }
-            }
-
         }
     }
 }

@@ -1,88 +1,151 @@
 footer {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(55, 62, 66, 1) 30%, rgba(65, 69, 73, 1) 70%, rgba(0, 0, 0, 1) 100%);
 
-        .fila_uno_footer {
-            width: 60%;
-            display: flex;
-            align-items: center;
-            margin-left: 20%;
-            margin-bottom: 4%;
+    .fila_uno_footer {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        margin-left: 20%;
+        margin-bottom: 4%;
 
-            .fila_sep {
-                margin-bottom: 3%;
+        @include mb() {
+            text-align: center;
+        }
 
-                .imgsep {
-                    height: 4px;
-                }
-    
-                h5 {
-                    color: white;
+        .fila_sep {
+            margin-bottom: 3%;
+
+            .imgsep {
+                height: 4px;
+
+                @include mb() {
+                    display: none;
                 }
             }
 
-            #img_merc {
-                width: 200px;
+            h5 {
+                color: white;
+
+                @include mb() {
+                    width: 100%;
+                }
             }
         }
 
-        .fila_dos_footer {
-            width: 60%;
-            display: flex;
-            margin-left: 20%;
+        #img_estrella {
+            width: 200px;
+
+            @include mb() {
+                width: 100px;
+            }
+        }
+
+    }
+
+    .fila_dos_footer {
+        width: 60%;
+        display: flex;
+        margin-left: 20%;
+        margin-bottom: 5%;
+
+        .fila_sep {
             margin-bottom: 5%;
 
-            .fila_sep {
-                margin-bottom: 5%;
+            .imgsep {
+                height: 4px;
+                width: 25%;
 
-                .imgsep {
-                    height: 4px;
-                    width: 25%;
-                }
-
-                h5 {
-                    color: white;
+                @include mb() {
+                    display: none;
                 }
             }
 
-            img {
-                width: 200px;
+            h5 {
+                color: white;
+
+                @include mb() {
+                    margin-top: 5%;
+                    width: 100%;
+                    padding: 0;
+                }
             }
         }
 
-        .fila_tres_footer {
-            width: 60%;
-            display: flex;
-            margin-left: 20%;
+        img {
+            width: 200px;
+            margin-bottom: 10%;
 
-            .fila_sep {
-                margin-bottom: 5%;
-
-                .imgsep {
-                    height: 4px;
-                    width: 25%;
-                }
-
-                h5 {
-                    color: white;
-                }
-            }
-
-            img{
-                width: 200px;
-            }
-
-            #urich {
-                width: 150px;
-            }
-
-            #babolat {
-                width: 310px;
-            }      
+            @include mb(){width: 100px;}
         }
+    }
+
+    .fila_tres_footer {
+        width: 60%;
+        display: flex;
+        margin-left: 20%;
+
+        .fila_sep {
+            margin-bottom: 5%;
+
+            .imgsep {
+                height: 4px;
+                width: 25%;
+
+                @include mb() {
+                    display: none;
+                }
+            }
+
+            h5 {
+                color: white;
+
+                @include mb() {
+                    width: 100%;
+                    margin-bottom: 5%;
+                    padding: 0;
+                }
+            }
+        }
+
+        img {
+            width: 200px;
+
+            @include mb () {
+                margin-bottom: 10%;
+                width: 100px;
+            }
+            @include tb(){width: 150px;}
+        }
+
+        #urich {
+            width: 150px;
+
+            @include mb() {
+                width: 70px;
+            }
+
+            @include tb(){width: 100px;}
+        }
+
+        #babolat {
+            width: 310px;
+
+            @include mb(){width: 100px;}
+            @include tb(){width: 140px;}
+        }
+
+        #adidas {
+            @include mb() {
+                width: 70px;
+            }
+            @include tb(){width: 100px;}
+        }
+    }
 
     .fila_nav {
         nav {
             padding: 0;
+
             .container-fluid {
                 a {
                     text-decoration: none;

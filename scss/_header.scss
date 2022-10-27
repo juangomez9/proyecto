@@ -28,6 +28,7 @@ header {
                     a {
                         margin: 2%;
                         @include mb(){margin: 0; visibility: hidden;}
+                        @include tb(){margin: 4%;}
 
                         img {
                             width: 25px;
@@ -41,9 +42,11 @@ header {
             width: 130px;
         }
 
+
         div {
             a {
-                margin: 1%;
+                margin-top: 6%;
+                padding: 2%;
                 @include mb(){margin: 2%; margin-top: 5%;}
             }
         }

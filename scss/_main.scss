@@ -74,6 +74,9 @@ main {
                 }
 
                 p {
+                    font-size: 17px;
+                    padding: 0;
+
                     @include mb() {
                         font-size: small;
                     }
@@ -101,6 +104,7 @@ main {
                 }
 
                 img {
+                    width: 100%;
                     max-width: 100%;
 
                     @include mb() {
@@ -187,7 +191,7 @@ main {
                         text-align: center;
 
                         @include mb() {
-                            font-size: small;
+                            font-size: 11px;
                         }
 
                         @include tb() {
@@ -338,7 +342,7 @@ main {
                     }
 
                     p {
-                        font-size: large;
+                        font-size: 17px;
                         color: map-get($paleta-colores, "blanco");
                         text-align: center;
 
@@ -518,6 +522,217 @@ main {
 
                         @include pc() {
                             font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fila_final {
+
+            .video_final {
+                width: 46%;
+                margin-left: 4%;
+
+                @include mb(){width: 100%; margin: 0; margin-bottom: 5%;}
+                @include mb(){}
+                @include mb(){}
+
+                video {
+                    max-width: 100%;
+                }
+            }
+
+            .video_final_2 {
+                width: 46%;
+                margin-left: 0.5%;
+                
+                @include mb(){width: 100%; margin: 0;}
+                @include tb(){}
+                @include pc(){}
+
+                video {
+                    max-width: 100%;
+                }
+            }
+        }
+
+
+        .fila_semifinal {
+
+            @include tb(){margin-bottom: 10%;}
+
+            .video_semi {
+                width: 58.3%;
+                margin-left: 4%;
+
+                @include mb() {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                @include tb() {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 3%;
+                }
+
+
+                video {
+                    width: 100%;
+                }
+            }
+
+            .noticias_semi {
+
+                @include tb(){display:flex;}
+
+                .con_imagen_semi {
+                    margin-left: 2.3%;
+                    width: 100%;
+                    height: 50%;
+                    margin-bottom: 3%;
+                    
+                    @include mb(){margin: 0; height: 276px; margin-bottom: 5%; margin-top: 5%;}
+                    @include tb(){height: 100%; width: 49%; margin-left: 0;}
+                    @include pc(){}
+
+                    .imagen_semi {
+                        background: url(../assets/galeria/lima-stupa-semifinal.jpg);
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-end;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                        .ancor_semi {
+                            margin-right: 0%;
+                            height: 45%;
+                            background: linear-gradient(0deg, rgba(39, 27, 69, 1) 0%, rgba(39, 27, 69, 0.927608543417367) 30%, rgba(39, 27, 69, 0.908000700280112) 70%, rgba(68, 51, 93, 0) 100%);
+                            padding-left: 4%;
+                            padding-top: 5%;
+                            display: flex;
+                            padding-left: 1%;
+
+                            @include mb(){padding-top: 10%; height: 30%;}
+                            @include tb(){padding-top: 10%;}
+                            @include pc(){}
+
+                            a {
+                                text-decoration: none;
+                                color: map-get($paleta-colores, "blanco");
+                                margin-left: 3%;
+
+                            }
+
+                            a:hover {
+                                text-decoration: underline;
+                            }
+
+                            h2 {
+                                font-size: x-large;
+
+                                @include mb() {
+                                    font-size: small;
+                                }
+
+                                @include tb() {
+                                    font-size: large;
+                                }
+
+                                @include pc() {
+                                    font-size: medium;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .con_imagen_semi_2 {
+                    margin-left: 2.3%;
+                    width: 100%;
+                    height: 50%;
+
+                    @include mb(){height: 276px; margin: 0;}
+                    @include tb(){height: 300px; width: 49%; margin-left: 2%; margin-right: 1%;}
+                    @include pc(){}
+
+                    .imagen_semi_2 {
+                        background: url(../assets/galeria/ortega-bea-semifinal.jpg);
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-end;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                        @include mb() {
+                            max-width: 100%;
+                            height: 276px;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+
+                        @include tb() {
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+
+                        @include pc() {
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+
+                        .ancor_semi {
+                            margin-right: 0%;
+                            height: 45%;
+                            background: linear-gradient(0deg, rgba(39, 27, 69, 1) 0%, rgba(39, 27, 69, 0.927608543417367) 30%, rgba(39, 27, 69, 0.908000700280112) 70%, rgba(68, 51, 93, 0) 100%);
+                            padding-left: 4%;
+                            padding-top: 5%;
+                            display: flex;
+                            padding-left: 1%;
+
+                            @include mb() {
+                                max-width: 100%;
+                                height: 30%;
+                                padding-top: 10%;
+                            }
+
+                            @include tb() { padding-top: 10%;}
+
+                            @include pc() {}
+
+                            a {
+                                text-decoration: none;
+                                color: map-get($paleta-colores, "blanco");
+                                margin-left: 3%;
+                            }
+
+                            a:hover {
+                                text-decoration: underline;
+                            }
+
+                            h2 {
+                                font-size: x-large;
+
+                                @include mb() {
+                                    font-size: small;
+                                }
+
+                                @include tb() {
+                                    font-size: large;
+                                }
+
+                                @include pc() {
+                                    font-size: medium;
+                                }
+                            }
                         }
                     }
                 }
@@ -779,7 +994,6 @@ main {
             .con_imagen_7 {
                 width: 56.5%;
                 margin-left: 4%;
-                margin-bottom: 10%;
 
                 @include mb() {
                     width: 100%;
@@ -788,7 +1002,7 @@ main {
                 }
 
                 @include tb() {
-                    width: 68.7%; 
+                    width: 68.7%;
                     margin-left: 0;
                 }
 
@@ -837,10 +1051,6 @@ main {
                             height: 30%;
                         }
 
-                        @include tb() {}
-
-                        @include pc() {}
-
                         a {
                             text-decoration: none;
                             color: map-get($paleta-colores, "blanco");
@@ -859,10 +1069,6 @@ main {
                             @include mb() {
                                 max-width: 100%;
                             }
-
-                            @include tb() {}
-
-                            @include pc() {}
                         }
                     }
 
@@ -870,86 +1076,172 @@ main {
                         @include mb() {
                             font-size: medium;
                         }
+                    }
+                }
+            }
 
-                        @include tb() {}
+            .section_car7 {
+                margin-left: 2.3%;
 
-                        @include pc() {}
+                @include mb() {
+                    height: 276px;
+                    max-width: 100%;
+                    margin-left: 0%;
+                    margin-bottom: 8%;
+                }
+
+                @include tb() {
+                    height: 269px;
+                    padding: 0;
+                    width: 29%;
+                }
+
+                @include pc() {
+                    height: 310px;
+                }
+
+                .card-link {
+                    margin: 0;
+                }
+
+                .card-body {
+                    background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
+
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: map-get($paleta-colores, "blanco");
+                        }
+
+                        h5 {
+                            font-size: x-large;
+                            text-align: center;
+                            color: map-get($paleta-colores, "blanco");
+
+                            @include mb() {
+                                font-size: small;
+                            }
+
+                            @include tb() {
+                                font-size: medium;
+                            }
+
+                            @include pc() {
+                                font-size: medium;
+                            }
+
+                        }
+                    }
+
+                    p {
+                        font-size: large;
+                        color: map-get($paleta-colores, "blanco");
+                        text-align: center;
+
+                        @include mb() {
+                            font-size: 12px;
+                        }
+
+                        @include tb() {
+                            font-size: 12px;
+                        }
+
+                        @include pc() {
+                            font-size: small;
+                        }
                     }
                 }
             }
         }
 
-        .section_car7 {
-            margin-left: 2.3%;
-            margin-bottom: 10%;
+        .fila_ocho {
 
-            @include mb() {
-                height: 276px;
-                max-width: 100%;
-                margin-left: 0%;
-                margin-bottom: 8%;
-            }
+            .con_imagen_separacion {
+                width: 92%;
+                height: 500px;
+                margin-left: 4%;
+                margin-bottom: 5%;
 
-            @include tb() {
-                height: 269px;
-                padding: 0;
-                width: 29%;
-            }
-
-            @include pc() {
-                height: 310px;
-            }
-
-            .card-link {
-                margin: 0;
-            }
-
-            .card-body {
-                background: linear-gradient(90deg, rgba(79, 84, 88, 1) 10%, rgba(95, 101, 108, 1) 30%, rgba(95, 101, 108, 1) 70%, rgba(79, 84, 88, 1) 90%);
-
-                a {
-                    text-decoration: none;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: map-get($paleta-colores, "blanco");
-                    }
-
-                    h5 {
-                        font-size: x-large;
-                        text-align: center;
-                        color: map-get($paleta-colores, "blanco");
-
-                        @include mb() {
-                            font-size: small;
-                        }
-
-                        @include tb() {
-                            font-size: medium;
-                        }
-
-                        @include pc() {
-                            font-size: medium;
-                        }
-
-                    }
+                @include mb() {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 8%;
+                    height: 300px;
                 }
 
-                p {
-                    font-size: large;
-                    color: map-get($paleta-colores, "blanco");
-                    text-align: center;
+                @include tb() {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                @include pc() {
+                    width: 95%;
+                }
+
+                .imagen_separacion {
+                    background: url(../assets/galeria/paquito-dinneno-separacion.jpg);
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
 
                     @include mb() {
-                        font-size: 12px;
+                        max-width: 100%;
+                        height: 276px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
 
                     @include tb() {
-                        font-size: 12px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
 
                     @include pc() {
-                        font-size: small;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .ancor_separacion {
+                        margin-right: 0%;
+                        height: 45%;
+                        width: 100%;
+                        background: linear-gradient(0deg, rgba(39, 27, 69, 1) 0%, rgba(39, 27, 69, 0.927608543417367) 30%, rgba(39, 27, 69, 0.908000700280112) 70%, rgba(68, 51, 93, 0) 100%);
+                        padding-left: 3%;
+                        padding-top: 10%;
+                        display: flex;
+
+                        @include mb() {
+                            max-width: 100%;
+                            height: 30%;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: map-get($paleta-colores, "blanco");
+                            margin-left: 3%;
+
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+
+                        h2 {
+                            font-size: xx-large;
+
+                            @include mb() {
+                                font-size: small;
+                            }
+                        }
                     }
                 }
             }
